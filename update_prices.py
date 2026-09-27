@@ -215,9 +215,11 @@ def parse_package(product, name):
     """
     n = norm(name)
 
-    variable_weight = any(
-        marker in n
-        for marker in (" cca ", " ca ", " rf", "rinfuz")
+    variable_weight = (
+        bool(re.search(r"\bcca\.?\s*\d", n))
+        or bool(re.search(r"\bca\.?\s*\d", n))
+        or bool(re.search(r"\brf\b", n))
+        or "rinfuz" in n
     )
 
     result = {
@@ -246,7 +248,7 @@ def parse_package(product, name):
     )
 
     kg_matches = re.findall(r"(\d+(?:[.,]\d+)?)\s*kg\b", n)
-    g_matches = re.findall(r"(\d+(?:[.,]\d+)?)\s*g\b", n)
+    g_matches = re.findall(r"(\d+(?:[.,]\d+)?)\s*(?:g|gr)\b", n)
 
     if frac_kg:
         numerator = float(frac_kg.group(1).replace(",", "."))
@@ -294,24 +296,28 @@ def comparable_price(row, product):
         return pack_price, pack
 
     if target_unit == "RSD/kg":
-        # Fixed-weight package: derive the comparable price from the
-        # current pack price (including an active discount).
-        if pack.get("kg") and pack["kg"] > 0:
-            return pack_price / pack["kg"], pack
-
-        # Loose / variable-weight goods: sale and regular prices are
-        # already expressed for the selling unit (normally kg).
-        if pack.get("variable_weight") or raw_unit in (
-            "kg", "kilogram", "kilograma"
-        ):
+        # Variable-weight goods (ca./cca/RF/rinfuz): listed product price is
+        # generally already per kg. Use active sale price first.
+        if pack.get("variable_weight"):
             if sale_active and sale is not None:
                 return sale, pack
             if official_unit_price is not None and official_unit_price > 0:
                 return official_unit_price, pack
             return regular, pack
 
-        # If package size cannot be inferred, fall back to the official
-        # unit price. This is still safer than treating a pack price as kg.
+        # Fixed packages: if we know the package weight, calculate from the
+        # actual pack price so discounts are reflected correctly.
+        if pack.get("kg") and pack["kg"] > 0:
+            return pack_price / pack["kg"], pack
+
+        # Products explicitly sold as kg should use sale/official unit price.
+        if raw_unit in ("kg", "kilogram", "kilograma"):
+            if sale_active and sale is not None:
+                return sale, pack
+            if official_unit_price is not None and official_unit_price > 0:
+                return official_unit_price, pack
+            return regular, pack
+
         if official_unit_price is not None and official_unit_price > 0:
             return official_unit_price, pack
 
