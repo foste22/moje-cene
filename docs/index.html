@@ -3,104 +3,324 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#111111">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Moje cene">
   <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
   <title>Moje cene</title>
   <style>
-    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#171717;background:#f5f5f3}
-    *{box-sizing:border-box} body{margin:0}.wrap{max-width:980px;margin:auto;padding:20px 16px 48px}
-    .hero{display:flex;justify-content:space-between;gap:16px;align-items:flex-end;margin-bottom:18px}.hero h1{font-size:clamp(2rem,8vw,3rem);line-height:.95;margin:0}.hero p{margin:8px 0 0;color:#696969}.updated{text-align:right;color:#777;font-size:.82rem}
-    .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.chip{border:1px solid #ddd;background:#fff;border-radius:999px;padding:9px 13px;font-weight:650;cursor:pointer}.chip.active{background:#171717;color:#fff;border-color:#171717}
-    .summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 20px}.metric{background:#fff;border:1px solid #e7e7e7;border-radius:16px;padding:14px}.metric b{display:block;font-size:1.45rem}.metric span{color:#777;font-size:.82rem}
-    .notice{background:#fff3cd;border:1px solid #ffe69c;border-radius:14px;padding:12px 14px;margin-bottom:14px;font-size:.9rem}.notice.ok{background:#eef8ef;border-color:#cce8cf}
-    .products{display:grid;gap:14px}.product{background:#fff;border:1px solid #e4e4e4;border-radius:20px;padding:16px}.product-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.product h2{font-size:1.05rem;margin:0}.target{color:#777;font-size:.83rem;margin-top:4px}.badge{font-size:.75rem;font-weight:800;border-radius:999px;padding:6px 9px;white-space:nowrap}.KUPI{background:#e8f7ea;color:#146c2e}.BLIZU{background:#fff1cf;color:#8a5d00}.CEKAJ{background:#eeeeee;color:#666}.STALE{background:#f4e8ff;color:#7442a8}
-    .offers{margin-top:12px;border-top:1px solid #eee}.offer{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;padding:12px 0;border-bottom:1px solid #f0f0f0}.offer:last-child{border-bottom:0;padding-bottom:0}.shop{font-weight:750}.matched{font-size:.8rem;color:#777;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:620px}.price{text-align:right;font-weight:850;font-size:1.05rem}.regular{font-size:.75rem;color:#888;text-decoration:line-through;margin-right:6px}.sale{font-size:.72rem;color:#146c2e;font-weight:750}.stale-row{opacity:.55}.empty{background:#fff;border:1px solid #e4e4e4;border-radius:20px;padding:28px;text-align:center;color:#777}
-    @media(max-width:620px){.hero{display:block}.updated{text-align:left;margin-top:10px}.summary{grid-template-columns:1fr 1fr 1fr}.metric{padding:11px}.metric b{font-size:1.2rem}.offer{grid-template-columns:minmax(0,1fr) auto}.matched{max-width:62vw}}
+    :root{
+      --bg:#f4f4f1;
+      --panel:#ffffff;
+      --ink:#151515;
+      --muted:#707070;
+      --line:#e7e7e1;
+      --green:#16783a;
+      --green-bg:#eaf7ee;
+      --amber:#966000;
+      --amber-bg:#fff2d7;
+      --grey:#686868;
+      --grey-bg:#efefed;
+      --red:#a92d2d;
+      --red-bg:#fff0f0;
+      --shadow:0 12px 30px rgba(0,0,0,.055);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--ink);
+      background:var(--bg);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg)}
+    button,input,select{font:inherit}
+    .shell{max-width:1080px;margin:0 auto;padding:18px 14px 54px}
+    .hero{
+      background:linear-gradient(135deg,#171717 0%,#262626 100%);
+      color:white;border-radius:26px;padding:24px 22px 20px;
+      box-shadow:var(--shadow);position:relative;overflow:hidden
+    }
+    .hero:after{
+      content:"";position:absolute;right:-60px;top:-95px;width:220px;height:220px;
+      border:1px solid rgba(255,255,255,.11);border-radius:50%
+    }
+    .hero-top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;position:relative;z-index:1}
+    h1{font-size:clamp(2.2rem,9vw,4rem);letter-spacing:-.055em;line-height:.9;margin:0}
+    .subtitle{margin:10px 0 0;color:#cfcfcf;font-size:.96rem;max-width:540px}
+    .refresh{text-align:right;color:#bdbdbd;font-size:.78rem;line-height:1.45;white-space:nowrap}
+    .health{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap;position:relative;z-index:1}
+    .source-pill{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.08);padding:7px 10px;border-radius:999px;font-size:.76rem}
+    .source-pill.ok:before{content:"● ";color:#80df9c}.source-pill.bad:before{content:"● ";color:#ff8d8d}.source-pill.off{opacity:.45}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+    .stat{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:14px 15px;box-shadow:0 5px 18px rgba(0,0,0,.025)}
+    .stat strong{display:block;font-size:1.55rem;letter-spacing:-.035em}.stat span{color:var(--muted);font-size:.78rem}
+    .section-title{display:flex;justify-content:space-between;gap:12px;align-items:end;margin:24px 2px 10px}
+    .section-title h2{margin:0;font-size:1.12rem;letter-spacing:-.02em}.section-title small{color:var(--muted)}
+    .best-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+    .best-card{background:var(--panel);border:1px solid var(--line);border-radius:19px;padding:14px;box-shadow:0 5px 18px rgba(0,0,0,.025)}
+    .best-card .kicker{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800}
+    .best-card .name{font-weight:850;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .best-card .value{font-size:1.28rem;font-weight:900;margin-top:8px;letter-spacing:-.03em}
+    .best-card .meta{font-size:.76rem;color:var(--muted);margin-top:4px}
+    .controls{position:sticky;top:0;z-index:20;padding:9px 0;background:rgba(244,244,241,.9);backdrop-filter:blur(14px)}
+    .control-panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:10px;box-shadow:var(--shadow)}
+    .search{width:100%;border:0;background:#f3f3f1;border-radius:14px;padding:12px 13px;outline:none}
+    .filters{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
+    .chip{border:1px solid var(--line);background:white;color:var(--ink);padding:8px 11px;border-radius:999px;font-weight:750;font-size:.78rem;cursor:pointer}
+    .chip.active{background:#171717;color:white;border-color:#171717}
+    .select{border:1px solid var(--line);background:white;border-radius:999px;padding:7px 10px;font-size:.78rem;font-weight:700}
+    .products{display:grid;gap:12px}
+    .product{background:var(--panel);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,.025)}
+    .product-head{display:flex;justify-content:space-between;gap:12px;padding:15px 16px 13px;align-items:flex-start}
+    .product h3{font-size:1.02rem;margin:0;letter-spacing:-.018em}
+    .target{color:var(--muted);font-size:.77rem;margin-top:4px}
+    .save{color:var(--green);font-size:.76rem;font-weight:800;margin-top:5px}
+    .badge{font-size:.68rem;font-weight:900;border-radius:999px;padding:6px 9px;white-space:nowrap;letter-spacing:.025em}
+    .KUPI{background:var(--green-bg);color:var(--green)}
+    .BLIZU{background:var(--amber-bg);color:var(--amber)}
+    .CEKAJ{background:var(--grey-bg);color:var(--grey)}
+    .STALE{background:#f3eaff;color:#7442a8}
+    .offers{border-top:1px solid var(--line)}
+    .offer{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;padding:12px 16px;border-bottom:1px solid #f0f0ec;align-items:center}
+    .offer:last-child{border-bottom:0}
+    .offer.best{background:#fbfffc}
+    .shopline{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+    .shop{font-weight:830;font-size:.9rem}
+    .best-label{font-size:.62rem;background:#171717;color:#fff;padding:4px 6px;border-radius:999px;font-weight:850;text-transform:uppercase;letter-spacing:.04em}
+    .matched{font-size:.74rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:680px;margin-top:3px}
+    .price{text-align:right;font-weight:900;font-size:1.02rem;white-space:nowrap}
+    .oldprice{font-size:.7rem;color:#8e8e8e;text-decoration:line-through;margin-right:5px;font-weight:650}
+    .discount{font-size:.66rem;background:var(--green-bg);color:var(--green);border-radius:6px;padding:3px 5px;font-weight:900;margin-right:5px}
+    .diff{font-size:.68rem;margin-top:3px;color:var(--muted);font-weight:650}
+    .stale-row{opacity:.55}
+    .empty,.error{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:28px;text-align:center;color:var(--muted)}
+    .footer{margin-top:28px;color:var(--muted);font-size:.75rem;text-align:center;line-height:1.55}
+    .install{display:none;margin-top:12px;border:1px dashed #d4d4ce;padding:11px 12px;border-radius:14px;color:#5d5d5d;font-size:.78rem}
+    .install.show{display:block}
+    @media(max-width:760px){
+      .hero-top{display:block}.refresh{text-align:left;margin-top:14px;white-space:normal}
+      .stats{grid-template-columns:1fr 1fr}.best-strip{grid-template-columns:1fr;display:none}
+      .section-title.best-title{display:none}
+      .offer{padding:12px 14px}.matched{max-width:58vw}
+    }
+    @media(max-width:420px){
+      .shell{padding:10px 9px 42px}.hero{border-radius:22px;padding:21px 18px 18px}
+      .stat{padding:12px}.stat strong{font-size:1.32rem}
+      .product-head{padding:14px}.offer{grid-template-columns:minmax(0,1fr) auto;gap:8px}
+      .matched{max-width:55vw}.price{font-size:.95rem}
+    }
   </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="hero">
-    <div><h1>Moje cene</h1><p>Najbolje cene u prodavnicama koje stvarno koristiš.</p></div>
-    <div class="updated" id="updated">Učitavanje…</div>
+<div class="shell">
+  <header class="hero">
+    <div class="hero-top">
+      <div>
+        <h1>Moje cene</h1>
+        <p class="subtitle">Lični pregled cena hrane u prodavnicama koje koristiš. Najpovoljnija ponuda je uvek prva.</p>
+      </div>
+      <div class="refresh" id="updated">Učitavanje podataka…</div>
+    </div>
+    <div class="health" id="sourceHealth"></div>
+  </header>
+
+  <section class="stats">
+    <div class="stat"><strong id="buyCount">–</strong><span>artikala za kupovinu</span></div>
+    <div class="stat"><strong id="saleCount">–</strong><span>aktivnih akcija</span></div>
+    <div class="stat"><strong id="trackedCount">–</strong><span>praćenih artikala</span></div>
+    <div class="stat"><strong id="storeCount">–</strong><span>aktivnih prodavnica</span></div>
+  </section>
+
+  <div class="section-title best-title">
+    <h2>Najzanimljivije danas</h2>
+    <small>najveće uštede prema tvom pragu</small>
+  </div>
+  <section class="best-strip" id="bestStrip"></section>
+
+  <div class="controls">
+    <div class="control-panel">
+      <input id="search" class="search" type="search" placeholder="Pretraži: piletina, luk, tunjevina…" autocomplete="off">
+      <div class="filters">
+        <button class="chip active" data-status="ALL">Sve</button>
+        <button class="chip" data-status="KUPI">Kupi</button>
+        <button class="chip" data-status="BLIZU">Blizu</button>
+        <button class="chip" data-status="CEKAJ">Čekaj</button>
+        <select class="select" id="storeFilter"><option value="ALL">Sve prodavnice</option></select>
+        <select class="select" id="categoryFilter"><option value="ALL">Sve kategorije</option></select>
+      </div>
+    </div>
   </div>
 
-  <div id="sourceNotice"></div>
-  <div class="summary">
-    <div class="metric"><b id="buyCount">–</b><span>ispod praga</span></div>
-    <div class="metric"><b id="nearCount">–</b><span>blizu praga</span></div>
-    <div class="metric"><b id="productCount">–</b><span>praćenih artikala</span></div>
-  </div>
+  <main id="products" class="products"><div class="empty">Učitavanje…</div></main>
 
-  <div class="toolbar">
-    <button class="chip active" data-filter="ALL">Sve</button>
-    <button class="chip" data-filter="KUPI">Kupi</button>
-    <button class="chip" data-filter="BLIZU">Blizu</button>
-    <button class="chip" data-filter="CEKAJ">Čekaj</button>
-  </div>
-
-  <div id="products" class="products"><div class="empty">Učitavanje podataka…</div></div>
+  <div class="install" id="installHint">Na iPhone-u možeš ovu stranicu dodati kao aplikaciju: <b>Share → Add to Home Screen</b>.</div>
+  <div class="footer">Cene dolaze iz objavljenih cenovnika trgovaca. Dostupnost u konkretnoj prodavnici može da se razlikuje.</div>
 </div>
+
 <script>
 const nf = new Intl.NumberFormat('sr-RS',{minimumFractionDigits:2,maximumFractionDigits:2});
-let allResults=[]; let activeFilter='ALL'; let meta={};
-const statusOrder={KUPI:0,BLIZU:1,CEKAJ:2};
+let payload={results:[],sources:[]};
+let state={status:'ALL',store:'ALL',category:'ALL',query:''};
+const order={KUPI:0,BLIZU:1,CEKAJ:2};
 
-function fmtPrice(x){return `${nf.format(x.price)} ${x.unit}`}
-function escapeHtml(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
-function productStatus(offers){
-  const fresh=offers.filter(x=>!x.stale);
-  const src=fresh.length?fresh:offers;
-  return src.sort((a,b)=>(statusOrder[a.status]??9)-(statusOrder[b.status]??9)||a.price-b.price)[0]?.status||'CEKAJ';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+const fmt=(v,u)=>`${nf.format(v)} ${u}`;
+
+function groupResults(){
+  const m=new Map();
+  for(const x of payload.results||[]){
+    if(!m.has(x.product_id))m.set(x.product_id,[]);
+    m.get(x.product_id).push(x);
+  }
+  return [...m.values()].map(offers=>{
+    const fresh=offers.filter(x=>!x.stale);
+    const usable=fresh.length?fresh:offers;
+    const best=[...usable].sort((a,b)=>(order[a.status]??9)-(order[b.status]??9)||a.price-b.price)[0];
+    return {
+      id:best.product_id,name:best.product,category:best.category||'Ostalo',
+      target:best.target,unit:best.unit,status:best.status,best,offers
+    };
+  });
 }
-function render(){
-  const grouped=new Map();
-  for(const x of allResults){ if(!grouped.has(x.product_id)) grouped.set(x.product_id,[]); grouped.get(x.product_id).push(x); }
-  let groups=[...grouped.values()].map(offers=>({offers,status:productStatus(offers),name:offers[0].product,target:offers[0].target,unit:offers[0].unit}));
-  groups.sort((a,b)=>(statusOrder[a.status]??9)-(statusOrder[b.status]??9)||a.name.localeCompare(b.name,'sr'));
-  if(activeFilter!=='ALL') groups=groups.filter(g=>g.status===activeFilter);
 
-  document.getElementById('buyCount').textContent=[...grouped.values()].filter(x=>productStatus(x)==='KUPI').length;
-  document.getElementById('nearCount').textContent=[...grouped.values()].filter(x=>productStatus(x)==='BLIZU').length;
-  document.getElementById('productCount').textContent=grouped.size;
-
-  const root=document.getElementById('products');
-  if(!groups.length){root.innerHTML='<div class="empty">Nema rezultata za ovaj filter.</div>';return}
-  root.innerHTML=groups.map(g=>{
-    const offers=[...g.offers].sort((a,b)=>Number(a.stale)-Number(b.stale)||a.price-b.price);
-    return `<section class="product">
-      <div class="product-head"><div><h2>${escapeHtml(g.name)}</h2><div class="target">Tvoj prag ≤ ${nf.format(g.target)} ${escapeHtml(g.unit)}</div></div><span class="badge ${g.status}">${g.status}</span></div>
-      <div class="offers">${offers.map(x=>{
-        const sale=x.is_sale&&x.regular_price>x.price?`<span class="regular">${nf.format(x.regular_price)}</span><span class="sale">−${x.discount_pct??''}%</span>`:'';
-        const stale=x.stale?'<span class="badge STALE">stari podaci</span>':'';
-        const date=x.price_list_date?` · cenovnik ${escapeHtml(x.price_list_date)}`:'';
-        return `<div class="offer ${x.stale?'stale-row':''}"><div><div class="shop">${escapeHtml(x.store)} ${stale}</div><div class="matched">${escapeHtml(x.matched_product)}${date}</div></div><div class="price">${sale}<div>${fmtPrice(x)}</div></div></div>`
-      }).join('')}</div>
-    </section>`
+function renderHealth(){
+  const wrap=$('#sourceHealth');
+  const src=(payload.sources||[]);
+  wrap.innerHTML=src.map(s=>{
+    const cls=!s.enabled?'off':s.ok?'ok':'bad';
+    let label=s.store;
+    if(s.enabled&&s.ok)label+=' · osveženo';
+    if(s.enabled&&s.ok===false)label+=' · stari podaci';
+    if(!s.enabled)label+=' · isključeno';
+    return `<span class="source-pill ${cls}">${esc(label)}</span>`;
   }).join('');
 }
 
-function renderSources(sources){
-  const enabled=sources.filter(s=>s.enabled); const bad=enabled.filter(s=>s.ok===false);
-  const el=document.getElementById('sourceNotice');
-  if(!bad.length){el.innerHTML='<div class="notice ok">Svi uključeni izvori su uspešno osveženi.</div>';return}
-  el.innerHTML=`<div class="notice">Nisu osveženi: ${bad.map(x=>escapeHtml(x.store)).join(', ')}. Prethodni rezultati za te izvore su označeni kao stari.</div>`;
+function renderStats(groups){
+  $('#buyCount').textContent=groups.filter(g=>g.status==='KUPI').length;
+  $('#trackedCount').textContent=groups.length;
+  $('#saleCount').textContent=(payload.results||[]).filter(x=>!x.stale&&x.is_sale).length;
+  $('#storeCount').textContent=(payload.sources||[]).filter(x=>x.enabled&&x.ok).length;
 }
 
-fetch('results.json?'+Date.now()).then(r=>r.json()).then(data=>{
-  if(Array.isArray(data)){allResults=data;meta={generated_at:null,sources:[]}}else{allResults=data.results||[];meta=data}
-  const dt=meta.generated_at?new Date(meta.generated_at):null;
-  document.getElementById('updated').textContent=dt?`Osveženo ${dt.toLocaleString('sr-RS')}`:'Datum osvežavanja nije dostupan';
-  renderSources(meta.sources||[]); render();
-}).catch(err=>{document.getElementById('products').innerHTML=`<div class="empty">Greška pri učitavanju: ${escapeHtml(err.message)}</div>`});
+function renderBest(groups){
+  const items=groups
+    .filter(g=>g.status==='KUPI'&&!g.best.stale)
+    .map(g=>({...g,savingPct:Math.max(0,(g.target-g.best.price)/g.target*100)}))
+    .sort((a,b)=>b.savingPct-a.savingPct)
+    .slice(0,3);
+  $('#bestStrip').innerHTML=items.map(g=>`
+    <div class="best-card">
+      <div class="kicker">${esc(g.best.store)}</div>
+      <div class="name">${esc(g.name)}</div>
+      <div class="value">${fmt(g.best.price,g.unit)}</div>
+      <div class="meta">${g.savingPct>0?`${nf.format(g.savingPct)}% ispod tvog praga`:`na tvom pragu`}${g.best.is_sale?' · akcija':''}</div>
+    </div>`).join('');
+}
 
-document.querySelectorAll('.chip').forEach(btn=>btn.addEventListener('click',()=>{
-  document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active')); btn.classList.add('active'); activeFilter=btn.dataset.filter; render();
+function fillFilters(groups){
+  const stores=[...new Set((payload.results||[]).map(x=>x.store))].sort((a,b)=>a.localeCompare(b,'sr'));
+  const cats=[...new Set(groups.map(x=>x.category))].sort((a,b)=>a.localeCompare(b,'sr'));
+  $('#storeFilter').innerHTML='<option value="ALL">Sve prodavnice</option>'+stores.map(x=>`<option>${esc(x)}</option>`).join('');
+  $('#categoryFilter').innerHTML='<option value="ALL">Sve kategorije</option>'+cats.map(x=>`<option>${esc(x)}</option>`).join('');
+}
+
+function filteredGroups(groups){
+  const q=state.query.trim().toLocaleLowerCase('sr');
+  return groups.filter(g=>{
+    if(state.status!=='ALL'&&g.status!==state.status)return false;
+    if(state.category!=='ALL'&&g.category!==state.category)return false;
+    if(state.store!=='ALL'&&!g.offers.some(o=>o.store===state.store))return false;
+    if(q){
+      const hay=[g.name,g.category,...g.offers.map(o=>`${o.store} ${o.matched_product}`)].join(' ').toLocaleLowerCase('sr');
+      if(!hay.includes(q))return false;
+    }
+    return true;
+  });
+}
+
+function renderProducts(groups){
+  let list=filteredGroups(groups);
+  list.sort((a,b)=>(order[a.status]??9)-(order[b.status]??9)||a.name.localeCompare(b.name,'sr'));
+  if(!list.length){$('#products').innerHTML='<div class="empty">Nema rezultata za izabrane filtere.</div>';return}
+
+  $('#products').innerHTML=list.map(g=>{
+    let offers=[...g.offers];
+    if(state.store!=='ALL')offers=offers.filter(x=>x.store===state.store);
+    offers.sort((a,b)=>Number(a.stale)-Number(b.stale)||a.price-b.price);
+    const best=offers.find(x=>!x.stale)||offers[0];
+    const saving=best&&best.price<g.target?g.target-best.price:0;
+    return `<section class="product">
+      <div class="product-head">
+        <div>
+          <h3>${esc(g.name)}</h3>
+          <div class="target">Tvoj prag ≤ ${fmt(g.target,g.unit)}</div>
+          ${saving>0?`<div class="save">Najbolja cena je ${nf.format(saving)} RSD ispod praga</div>`:''}
+        </div>
+        <span class="badge ${g.status}">${g.status}</span>
+      </div>
+      <div class="offers">
+        ${offers.map((x,i)=>{
+          const isBest=i===0&&!x.stale;
+          const sale=x.is_sale&&x.regular_price>x.price
+            ? `<span class="oldprice">${nf.format(x.regular_price)}</span><span class="discount">−${x.discount_pct??''}%</span>`:'';
+          const stale=x.stale?'<span class="badge STALE">staro</span>':'';
+          const diff=x.price-g.target;
+          const diffText=diff<=0?`${nf.format(Math.abs(diff))} RSD ispod praga`:`${nf.format(diff)} RSD iznad praga`;
+          return `<div class="offer ${isBest?'best':''} ${x.stale?'stale-row':''}">
+            <div>
+              <div class="shopline"><span class="shop">${esc(x.store)}</span>${isBest?'<span class="best-label">najbolje</span>':''}${stale}</div>
+              <div class="matched">${esc(x.matched_product)}${x.price_list_date?` · ${esc(x.price_list_date)}`:''}</div>
+            </div>
+            <div class="price">
+              <div>${sale}${fmt(x.price,x.unit)}</div>
+              <div class="diff">${diffText}</div>
+            </div>
+          </div>`
+        }).join('')}
+      </div>
+    </section>`;
+  }).join('');
+}
+
+function render(){
+  const groups=groupResults();
+  renderStats(groups); renderBest(groups); renderProducts(groups);
+}
+
+fetch('results.json?ts='+Date.now(),{cache:'no-store'})
+  .then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()})
+  .then(data=>{
+    payload=Array.isArray(data)?{results:data,sources:[]}:data;
+    const dt=payload.generated_at?new Date(payload.generated_at):null;
+    $('#updated').innerHTML=dt
+      ? `Poslednje osvežavanje<br><b>${dt.toLocaleString('sr-RS',{dateStyle:'medium',timeStyle:'short'})}</b>`
+      : 'Vreme osvežavanja nije dostupno';
+    renderHealth();
+    const groups=groupResults();
+    fillFilters(groups);
+    render();
+  })
+  .catch(err=>{
+    $('#products').innerHTML=`<div class="error">Ne mogu da učitam rezultate.<br><small>${esc(err.message)}</small></div>`;
+    $('#updated').textContent='Greška pri učitavanju';
+  });
+
+document.querySelectorAll('[data-status]').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('[data-status]').forEach(x=>x.classList.remove('active'));
+  btn.classList.add('active');state.status=btn.dataset.status;render();
 }));
+$('#storeFilter').addEventListener('change',e=>{state.store=e.target.value;render()});
+$('#categoryFilter').addEventListener('change',e=>{state.category=e.target.value;render()});
+$('#search').addEventListener('input',e=>{state.query=e.target.value;render()});
 
-if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js').catch(()=>{})}
+const standalone=window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone;
+if(!standalone&&/iphone|ipad|ipod/i.test(navigator.userAgent))$('#installHint').classList.add('show');
+
+if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+}
 </script>
-</body></html>
+</body>
+</html>

@@ -1,9 +1,25 @@
 {
   "name": "Moje cene",
-  "short_name": "Cene",
+  "short_name": "Moje cene",
+  "description": "Lični pregled cena i akcija u prodavnicama koje koristiš.",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#f5f5f3",
-  "theme_color": "#ffffff",
-  "lang": "sr"
+  "background_color": "#f4f4f1",
+  "theme_color": "#111111",
+  "lang": "sr",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
