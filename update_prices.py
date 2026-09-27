@@ -13,6 +13,11 @@ TODAY = date.today()
 
 def norm(value):
     value = str(value or "").lower().strip()
+
+    # NFKD removes accents from č/ć/š/ž, but Serbian đ does not
+    # decompose reliably, so normalize it explicitly.
+    value = value.replace("đ", "dj")
+
     value = "".join(
         c for c in unicodedata.normalize("NFKD", value)
         if not unicodedata.combining(c)
@@ -234,10 +239,21 @@ def parse_package(product, name):
         return result
 
     # kg / g
+    # First handle fractions such as "1/2KG" = 0.5 kg.
+    frac_kg = re.search(
+        r"(?<!\d)(\d+(?:[.,]\d+)?)\s*/\s*(\d+(?:[.,]\d+)?)\s*kg\b",
+        n,
+    )
+
     kg_matches = re.findall(r"(\d+(?:[.,]\d+)?)\s*kg\b", n)
     g_matches = re.findall(r"(\d+(?:[.,]\d+)?)\s*g\b", n)
 
-    if kg_matches:
+    if frac_kg:
+        numerator = float(frac_kg.group(1).replace(",", "."))
+        denominator = float(frac_kg.group(2).replace(",", "."))
+        if denominator:
+            result["kg"] = numerator / denominator
+    elif kg_matches:
         result["kg"] = float(kg_matches[-1].replace(",", "."))
     elif g_matches:
         result["kg"] = float(g_matches[-1].replace(",", ".")) / 1000.0
@@ -262,8 +278,12 @@ def parse_package(product, name):
 def comparable_price(row, product):
     target_unit = product["unit"]
     pack_price = effective_pack_price(row)
+    regular = price_regular(row)
+    sale = price_sale(row)
     official_unit_price = price_unit(row)
     pack = parse_package(product, product_name(row))
+    raw_unit = norm(get_field(row, "Jedinica mere"))
+    sale_active = sale_is_active(row)
 
     if pack_price is None:
         return None, pack
@@ -274,15 +294,24 @@ def comparable_price(row, product):
         return pack_price, pack
 
     if target_unit == "RSD/kg":
-        if pack.get("variable_weight"):
-            # Kod RF / rinfuz / cca artikala cena je uglavnom već po kg.
-            if official_unit_price is not None and official_unit_price > 0:
-                return official_unit_price, pack
-            return pack_price, pack
-
+        # Fixed-weight package: derive the comparable price from the
+        # current pack price (including an active discount).
         if pack.get("kg") and pack["kg"] > 0:
             return pack_price / pack["kg"], pack
 
+        # Loose / variable-weight goods: sale and regular prices are
+        # already expressed for the selling unit (normally kg).
+        if pack.get("variable_weight") or raw_unit in (
+            "kg", "kilogram", "kilograma"
+        ):
+            if sale_active and sale is not None:
+                return sale, pack
+            if official_unit_price is not None and official_unit_price > 0:
+                return official_unit_price, pack
+            return regular, pack
+
+        # If package size cannot be inferred, fall back to the official
+        # unit price. This is still safer than treating a pack price as kg.
         if official_unit_price is not None and official_unit_price > 0:
             return official_unit_price, pack
 
@@ -291,6 +320,13 @@ def comparable_price(row, product):
     if target_unit == "RSD/l":
         if pack.get("l") and pack["l"] > 0:
             return pack_price / pack["l"], pack
+
+        if raw_unit in ("l", "lit", "litar", "litara"):
+            if sale_active and sale is not None:
+                return sale, pack
+            if official_unit_price is not None and official_unit_price > 0:
+                return official_unit_price, pack
+            return regular, pack
 
         if official_unit_price is not None and official_unit_price > 0:
             return official_unit_price, pack
