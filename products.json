@@ -1,0 +1,232 @@
+{
+  "products": [
+    {
+      "id": "celo_pile",
+      "name": "Celo pile",
+      "category": "Meso",
+      "target_price": 250,
+      "unit": "RSD/kg",
+      "include": [
+        "pile",
+        "celo"
+      ],
+      "exclude": [
+        "file",
+        "batak",
+        "krilo",
+        "leđa",
+        "ledja"
+      ]
+    },
+    {
+      "id": "pileca_ledja",
+      "name": "Pileća leđa / karkasa",
+      "category": "Meso",
+      "target_price": 200,
+      "unit": "RSD/kg",
+      "include": [
+        "pile",
+        "leđa",
+        "ledja"
+      ],
+      "exclude": []
+    },
+    {
+      "id": "batak_karabatak",
+      "name": "Batak + karabatak",
+      "category": "Meso",
+      "target_price": 300,
+      "unit": "RSD/kg",
+      "include": [
+        "batak"
+      ],
+      "exclude": [
+        "file"
+      ]
+    },
+    {
+      "id": "pileci_file",
+      "name": "Pileći file",
+      "category": "Meso",
+      "target_price": 500,
+      "unit": "RSD/kg",
+      "include": [
+        "pile",
+        "file"
+      ],
+      "exclude": []
+    },
+    {
+      "id": "svinjski_vrat",
+      "name": "Svinjski vrat",
+      "category": "Meso",
+      "target_price": 600,
+      "unit": "RSD/kg",
+      "include": [
+        "svinj",
+        "vrat"
+      ],
+      "exclude": [
+        "dimljen"
+      ]
+    },
+    {
+      "id": "svinjska_plecka",
+      "name": "Svinjska plećka",
+      "category": "Meso",
+      "target_price": 600,
+      "unit": "RSD/kg",
+      "include": [
+        "svinj",
+        "pleć",
+        "plec"
+      ],
+      "exclude": [
+        "dimljen"
+      ]
+    },
+    {
+      "id": "svinjski_but",
+      "name": "Svinjski but",
+      "category": "Meso",
+      "target_price": 600,
+      "unit": "RSD/kg",
+      "include": [
+        "svinj",
+        "but"
+      ],
+      "exclude": [
+        "dimljen"
+      ]
+    },
+    {
+      "id": "jaja",
+      "name": "Jaja",
+      "category": "Jaja",
+      "target_price": 16,
+      "unit": "RSD/kom",
+      "include": [
+        "jaja"
+      ],
+      "exclude": []
+    },
+    {
+      "id": "oslic",
+      "name": "Oslić",
+      "category": "Riba",
+      "target_price": 500,
+      "unit": "RSD/kg",
+      "include": [
+        "osli"
+      ],
+      "exclude": []
+    },
+    {
+      "id": "skusa",
+      "name": "Skuša",
+      "category": "Riba",
+      "target_price": 450,
+      "unit": "RSD/kg",
+      "include": [
+        "skuš",
+        "skus"
+      ],
+      "exclude": []
+    },
+    {
+      "id": "tunjevina",
+      "name": "Tunjevina konzerva",
+      "category": "Riba",
+      "target_price": 150,
+      "unit": "RSD/kom",
+      "include": [
+        "tun"
+      ],
+      "exclude": []
+    },
+    {
+      "id": "sardina",
+      "name": "Sardina konzerva",
+      "category": "Riba",
+      "target_price": 120,
+      "unit": "RSD/kom",
+      "include": [
+        "sardin"
+      ],
+      "exclude": []
+    },
+    {
+      "id": "brasno",
+      "name": "Brašno T-400/500",
+      "category": "Osnovno",
+      "target_price": 70,
+      "unit": "RSD/kg",
+      "include": [
+        "brašno",
+        "brasno"
+      ],
+      "exclude": []
+    },
+    {
+      "id": "pasulj",
+      "name": "Pasulj",
+      "category": "Osnovno",
+      "target_price": 250,
+      "unit": "RSD/kg",
+      "include": [
+        "pasulj"
+      ],
+      "exclude": []
+    },
+    {
+      "id": "ulje",
+      "name": "Suncokretovo ulje",
+      "category": "Osnovno",
+      "target_price": 170,
+      "unit": "RSD/l",
+      "include": [
+        "ulje"
+      ],
+      "exclude": [
+        "maslin"
+      ]
+    },
+    {
+      "id": "krompir",
+      "name": "Krompir",
+      "category": "Povrće",
+      "target_price": 80,
+      "unit": "RSD/kg",
+      "include": [
+        "krompir"
+      ],
+      "exclude": []
+    },
+    {
+      "id": "luk",
+      "name": "Crni luk",
+      "category": "Povrće",
+      "target_price": 50,
+      "unit": "RSD/kg",
+      "include": [
+        "luk"
+      ],
+      "exclude": [
+        "beli",
+        "mladi"
+      ]
+    },
+    {
+      "id": "sargarepa",
+      "name": "Šargarepa",
+      "category": "Povrće",
+      "target_price": 100,
+      "unit": "RSD/kg",
+      "include": [
+        "šargarep",
+        "sargarep"
+      ],
+      "exclude": []
+    }
+  ]
+}

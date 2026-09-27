@@ -1,0 +1,10 @@
+<!doctype html><html lang="sr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="manifest.json"><title>Moje cene</title>
+<style>body{font-family:system-ui;margin:0;background:#f6f6f6;color:#161616}.wrap{max-width:900px;margin:auto;padding:20px}h1{margin-bottom:4px}.sub{color:#666}.grid{display:grid;gap:12px;margin-top:20px}.card{background:white;border-radius:16px;padding:16px;box-shadow:0 2px 12px #0000000c}.top{display:flex;justify-content:space-between;gap:10px}.price{font-size:1.35rem;font-weight:750}.KUPI{color:#087f23}.BLIZU{color:#9a6700}.CEKAJ{color:#666}.meta{font-size:.9rem;color:#666;margin-top:6px}</style></head>
+<body><div class="wrap"><h1>Moje cene</h1><div class="sub">Lokalni tracker cena za prodavnice koje koristiš</div><div id="grid" class="grid">Učitavanje…</div></div>
+<script>
+fetch('results.json?'+Date.now()).then(r=>r.json()).then(d=>{
+d.sort((a,b)=>a.status.localeCompare(b.status)||a.product.localeCompare(b.product));
+document.getElementById('grid').innerHTML=d.length?d.map(x=>`<div class="card"><div class="top"><b>${x.product}</b><b class="${x.status}">${x.status}</b></div><div class="price">${x.price.toFixed(2)} ${x.unit}</div><div class="meta">${x.store} · cilj ≤ ${x.target} ${x.unit}</div></div>`).join(''):'Još nema obrađenih rezultata.';
+}).catch(()=>document.getElementById('grid').textContent='results.json još nije generisan.');
+</script></body></html>

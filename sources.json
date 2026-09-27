@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "id": "lidl",
+      "name": "Lidl",
+      "enabled": true,
+      "url": "https://kompanija.lidl.rs/content/download/165294/fileupload/cene_proizvoda_Lidl.csv",
+      "fallback": "https://data.gov.rs/sr/datasets/r/79be27de-a311-489d-86ae-6df3c7a65345"
+    },
+    {
+      "id": "maxi",
+      "name": "Maxi / Delhaize",
+      "enabled": true,
+      "url": "https://tsmdelhaizeserbia.delhaize.rs/PublicDoc/cene_proizvoda_Delhaize.csv",
+      "fallback": "https://data.gov.rs/sr/datasets/r/aa0a4ab4-1dc8-49e2-abef-67612a2abcbb"
+    },
+    {
+      "id": "aman",
+      "name": "Aman",
+      "enabled": true,
+      "url": "https://data.gov.rs/s/resources/cenovnici-proizvoda-prema-pravilniku-o-uslovima-sadrzaju-i-nacinu-objavljivanja-cenovnika-aman-d-o-o/20260910-073326/cene-proizvoda-aman-doo.csv",
+      "fallback": "https://data.gov.rs/sr/datasets/r/90465a2b-ad9f-4c42-b727-4bbc2bcbd7bb"
+    },
+    {
+      "id": "dis",
+      "name": "DIS",
+      "enabled": false,
+      "url": "",
+      "fallback": "",
+      "note": "Dodati zvanični mašinski čitljiv izvor kada ga potvrdimo."
+    },
+    {
+      "id": "dm",
+      "name": "dm",
+      "enabled": false,
+      "url": "",
+      "fallback": "",
+      "note": "Drogerija – izvor tek treba povezati."
+    },
+    {
+      "id": "lilly",
+      "name": "Lilly",
+      "enabled": false,
+      "url": "",
+      "fallback": "",
+      "note": "Drogerija – izvor tek treba povezati."
+    }
+  ]
+}
