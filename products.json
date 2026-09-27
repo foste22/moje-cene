@@ -6,16 +6,21 @@
       "category": "Meso",
       "target_price": 250,
       "unit": "RSD/kg",
-      "include": [
-        "pile",
-        "celo"
+      "include_groups": [
+        [
+          "celo"
+        ],
+        [
+          "pile"
+        ]
+      ],
+      "categories_any": [
+        "sveze i preradjeno meso"
       ],
       "exclude": [
-        "file",
-        "batak",
-        "krilo",
-        "leđa",
-        "ledja"
+        "peceno",
+        "grilovano",
+        "dimljeno"
       ]
     },
     {
@@ -24,12 +29,22 @@
       "category": "Meso",
       "target_price": 200,
       "unit": "RSD/kg",
-      "include": [
-        "pile",
-        "leđa",
-        "ledja"
+      "include_groups": [
+        [
+          "pilec*"
+        ],
+        [
+          "ledj*",
+          "karkas*"
+        ]
       ],
-      "exclude": []
+      "categories_any": [
+        "sveze i preradjeno meso"
+      ],
+      "exclude": [
+        "dimljeno",
+        "peceno"
+      ]
     },
     {
       "id": "batak_karabatak",
@@ -37,11 +52,24 @@
       "category": "Meso",
       "target_price": 300,
       "unit": "RSD/kg",
-      "include": [
-        "batak"
+      "include_groups": [
+        [
+          "pilec*"
+        ],
+        [
+          "batak"
+        ],
+        [
+          "karabatak"
+        ]
+      ],
+      "categories_any": [
+        "sveze i preradjeno meso"
       ],
       "exclude": [
-        "file"
+        "paniran",
+        "dimljen",
+        "pecen"
       ]
     },
     {
@@ -50,11 +78,29 @@
       "category": "Meso",
       "target_price": 500,
       "unit": "RSD/kg",
-      "include": [
-        "pile",
-        "file"
+      "include_groups": [
+        [
+          "pilec*"
+        ],
+        [
+          "file"
+        ]
       ],
-      "exclude": []
+      "categories_any": [
+        "sveze i preradjeno meso"
+      ],
+      "exclude": [
+        "medaljon",
+        "paniran",
+        "crevu",
+        "slajs",
+        "narezak",
+        "dimljen",
+        "sunka",
+        "salama",
+        "pasteta",
+        "mini"
+      ]
     },
     {
       "id": "svinjski_vrat",
@@ -62,12 +108,24 @@
       "category": "Meso",
       "target_price": 600,
       "unit": "RSD/kg",
-      "include": [
-        "svinj",
-        "vrat"
+      "include_groups": [
+        [
+          "svinj*"
+        ],
+        [
+          "vrat"
+        ]
+      ],
+      "categories_any": [
+        "sveze i preradjeno meso"
       ],
       "exclude": [
-        "dimljen"
+        "suvi",
+        "dimljen",
+        "narezak",
+        "pecen",
+        "sunka",
+        "salama"
       ]
     },
     {
@@ -76,13 +134,23 @@
       "category": "Meso",
       "target_price": 600,
       "unit": "RSD/kg",
-      "include": [
-        "svinj",
-        "pleć",
-        "plec"
+      "include_groups": [
+        [
+          "svinj*"
+        ],
+        [
+          "pleck*"
+        ]
+      ],
+      "categories_any": [
+        "sveze i preradjeno meso"
       ],
       "exclude": [
-        "dimljen"
+        "dimljen",
+        "suvi",
+        "narezak",
+        "pasteta",
+        "salama"
       ]
     },
     {
@@ -91,12 +159,23 @@
       "category": "Meso",
       "target_price": 600,
       "unit": "RSD/kg",
-      "include": [
-        "svinj",
-        "but"
+      "include_groups": [
+        [
+          "svinj*"
+        ],
+        [
+          "but"
+        ]
+      ],
+      "categories_any": [
+        "sveze i preradjeno meso"
       ],
       "exclude": [
-        "dimljen"
+        "dimljen",
+        "suvi",
+        "narezak",
+        "sunka",
+        "salama"
       ]
     },
     {
@@ -105,10 +184,20 @@
       "category": "Jaja",
       "target_price": 16,
       "unit": "RSD/kom",
-      "include": [
+      "include_groups": [
+        [
+          "jaja"
+        ]
+      ],
+      "categories_any": [
         "jaja"
       ],
-      "exclude": []
+      "exclude": [
+        "cokolad",
+        "testen",
+        "keks"
+      ],
+      "count_from_name": true
     },
     {
       "id": "oslic",
@@ -116,10 +205,23 @@
       "category": "Riba",
       "target_price": 500,
       "unit": "RSD/kg",
-      "include": [
-        "osli"
+      "include_groups": [
+        [
+          "oslic",
+          "oslic*"
+        ]
       ],
-      "exclude": []
+      "categories_any": [
+        "sveza i preradjena riba",
+        "smrznuti proizvodi"
+      ],
+      "exclude": [
+        "pasteta",
+        "namaz",
+        "stapic",
+        "burger",
+        "paniran"
+      ]
     },
     {
       "id": "skusa",
@@ -127,11 +229,22 @@
       "category": "Riba",
       "target_price": 450,
       "unit": "RSD/kg",
-      "include": [
-        "skuš",
-        "skus"
+      "include_groups": [
+        [
+          "skusa",
+          "skuse"
+        ]
       ],
-      "exclude": []
+      "categories_any": [
+        "sveza i preradjena riba",
+        "smrznuti proizvodi"
+      ],
+      "exclude": [
+        "pasteta",
+        "namaz",
+        "konzerva",
+        "filet"
+      ]
     },
     {
       "id": "tunjevina",
@@ -139,10 +252,23 @@
       "category": "Riba",
       "target_price": 150,
       "unit": "RSD/kom",
-      "include": [
-        "tun"
+      "include_groups": [
+        [
+          "tunjevina",
+          "tuna"
+        ]
       ],
-      "exclude": []
+      "categories_any": [
+        "sveza i preradjena riba"
+      ],
+      "exclude": [
+        "pasteta",
+        "namaz",
+        "filet",
+        "steak",
+        "salata",
+        "sendvic"
+      ]
     },
     {
       "id": "sardina",
@@ -150,10 +276,19 @@
       "category": "Riba",
       "target_price": 120,
       "unit": "RSD/kom",
-      "include": [
-        "sardin"
+      "include_groups": [
+        [
+          "sardina",
+          "sardine"
+        ]
       ],
-      "exclude": []
+      "categories_any": [
+        "sveza i preradjena riba"
+      ],
+      "exclude": [
+        "pasteta",
+        "namaz"
+      ]
     },
     {
       "id": "brasno",
@@ -161,11 +296,24 @@
       "category": "Osnovno",
       "target_price": 70,
       "unit": "RSD/kg",
-      "include": [
-        "brašno",
+      "include_groups": [
+        [
+          "brasno"
+        ]
+      ],
+      "categories_any": [
         "brasno"
       ],
-      "exclude": []
+      "exclude": [
+        "kukuruz",
+        "razen",
+        "integral",
+        "heljd",
+        "ovseno",
+        "pirinc"
+      ],
+      "max_package_kg": 5,
+      "slash_one_is_kg": true
     },
     {
       "id": "pasulj",
@@ -173,10 +321,21 @@
       "category": "Osnovno",
       "target_price": 250,
       "unit": "RSD/kg",
-      "include": [
-        "pasulj"
+      "include_groups": [
+        [
+          "pasulj"
+        ]
       ],
-      "exclude": []
+      "categories_any": [
+        "mahunarke"
+      ],
+      "exclude": [
+        "sterilisan",
+        "konzerv",
+        "gotov",
+        "salata"
+      ],
+      "max_package_kg": 2
     },
     {
       "id": "ulje",
@@ -184,11 +343,20 @@
       "category": "Osnovno",
       "target_price": 170,
       "unit": "RSD/l",
-      "include": [
-        "ulje"
+      "include_groups": [
+        [
+          "suncokret*"
+        ],
+        [
+          "ulje"
+        ]
+      ],
+      "categories_any": [
+        "ulja i masti"
       ],
       "exclude": [
-        "maslin"
+        "sprej",
+        "margarin"
       ]
     },
     {
@@ -197,10 +365,21 @@
       "category": "Povrće",
       "target_price": 80,
       "unit": "RSD/kg",
-      "include": [
-        "krompir"
+      "include_groups": [
+        [
+          "krompir"
+        ]
       ],
-      "exclude": []
+      "categories_any": [
+        "sveze voce i povrce"
+      ],
+      "exclude": [
+        "pita",
+        "burek",
+        "pomfrit",
+        "cips",
+        "smrznut"
+      ]
     },
     {
       "id": "luk",
@@ -208,8 +387,16 @@
       "category": "Povrće",
       "target_price": 50,
       "unit": "RSD/kg",
-      "include": [
-        "luk"
+      "include_groups": [
+        [
+          "luk"
+        ],
+        [
+          "crni"
+        ]
+      ],
+      "categories_any": [
+        "sveze voce i povrce"
       ],
       "exclude": [
         "beli",
@@ -222,11 +409,18 @@
       "category": "Povrće",
       "target_price": 100,
       "unit": "RSD/kg",
-      "include": [
-        "šargarep",
-        "sargarep"
+      "include_groups": [
+        [
+          "sargarep*"
+        ]
       ],
-      "exclude": []
+      "categories_any": [
+        "sveze voce i povrce"
+      ],
+      "exclude": [
+        "salata",
+        "sok"
+      ]
     }
   ]
 }
