@@ -190,7 +190,7 @@ function renderHealth(){
   wrap.innerHTML=src.map(s=>{
     const cls=!s.enabled?'off':s.ok?'ok':'bad';
     let label=s.store;
-    if(s.enabled&&s.ok)label+=' · osveženo';
+    if(s.enabled&&s.ok)label+=s.scope==='action_only'?' · akcije':' · osveženo';
     if(s.enabled&&s.ok===false)label+=' · stari podaci';
     if(!s.enabled)label+=' · isključeno';
     return `<span class="source-pill ${cls}">${esc(label)}</span>`;
@@ -199,7 +199,7 @@ function renderHealth(){
 
 function renderStats(groups){
   $('#buyCount').textContent=groups.filter(g=>g.status==='KUPI').length;
-  $('#trackedCount').textContent=groups.length;
+  $('#trackedCount').textContent=payload.tracked_product_count||groups.length;
   $('#saleCount').textContent=(payload.results||[]).filter(x=>!x.stale&&x.is_sale).length;
   $('#storeCount').textContent=(payload.sources||[]).filter(x=>x.enabled&&x.ok).length;
 }

@@ -5,16 +5,18 @@ import re
 import unicodedata
 from collections import Counter, defaultdict
 from datetime import datetime
+from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
+from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parent
 TZ = ZoneInfo("Europe/Belgrade")
 NOW = datetime.now(TZ)
 TODAY = NOW.date()
-PARSER_VERSION = "final-1.0"
+PARSER_VERSION = "final-1.1"
 
 
 def norm(value):
@@ -44,6 +46,13 @@ def parse_number(value):
         return float(s)
     except ValueError:
         return None
+
+
+def round_price(value, places=2):
+    if value is None:
+        return None
+    quantum = Decimal("1").scaleb(-places)
+    return float(Decimal(str(value)).quantize(quantum, rounding=ROUND_HALF_UP))
 
 
 def parse_date(value):
@@ -227,12 +236,12 @@ def category_matches(row, product):
     return True
 
 
-def match_product(row, product):
+def match_product(row, product, ignore_category=False):
     name = product_name(row)
     if not name:
         return False, "missing_name", None
 
-    if not category_matches(row, product):
+    if not ignore_category and not category_matches(row, product):
         return False, "category", None
 
     for group in product.get("include_groups", []):
@@ -251,9 +260,24 @@ def match_product(row, product):
 
     pack = parse_package(product, name)
 
+    min_kg = product.get("min_package_kg")
+    if min_kg is not None and pack.get("kg") is not None and not pack.get("variable_weight"):
+        if pack["kg"] < float(min_kg):
+            return False, "package_too_small", pack
+
     max_kg = product.get("max_package_kg")
     if max_kg is not None and pack.get("kg") is not None and not pack.get("variable_weight"):
         if pack["kg"] > float(max_kg):
+            return False, "package_too_large", pack
+
+    min_l = product.get("min_package_l")
+    if min_l is not None and pack.get("l") is not None and not pack.get("variable_weight"):
+        if pack["l"] < float(min_l):
+            return False, "package_too_small", pack
+
+    max_l = product.get("max_package_l")
+    if max_l is not None and pack.get("l") is not None and not pack.get("variable_weight"):
+        if pack["l"] > float(max_l):
             return False, "package_too_large", pack
 
     max_count = product.get("max_count")
@@ -342,6 +366,11 @@ def normalize_prices(row, product, pack):
                 ratio = regular / official_unit
                 if ratio < 0.8 or ratio > 1.25:
                     warnings.append("official_unit_mismatch")
+        elif product.get("kg_equivalent_to_l") and pack.get("kg") and pack["kg"] > 0:
+            regular = regular_raw / pack["kg"]
+            sale = sale_raw / pack["kg"] if sale_raw is not None else None
+            method = "dairy_kg_as_l_approx"
+            warnings.append("kg_used_as_liter_approx")
         elif raw_unit in ("l", "lit", "litar", "litara"):
             regular = official_unit if official_unit and official_unit > 0 else regular_raw
             sale = sale_raw
@@ -378,12 +407,12 @@ def normalize_prices(row, product, pack):
 
     discount_pct = None
     if sale is not None and regular > 0 and sale < regular:
-        discount_pct = round((regular - sale) / regular * 100, 1)
+        discount_pct = round_price((regular - sale) / regular * 100, 1)
 
     return {
-        "current": round(current, 2),
-        "regular": round(regular, 2),
-        "sale": round(sale, 2) if sale is not None else None,
+        "current": round_price(current, 2),
+        "regular": round_price(regular, 2),
+        "sale": round_price(sale, 2) if sale is not None else None,
         "is_sale": sale is not None and sale < regular,
         "discount_pct": discount_pct,
         "method": method,
@@ -429,6 +458,100 @@ def parse_csv_bytes(content):
     return rows
 
 
+
+def _dis_action_period(text):
+    """Return active (start, end) dates from a DIS action page, or (None, None)."""
+    m = re.search(
+        r"(?<!\d)(\d{1,2})\.(\d{1,2})\.?\s*-\s*(\d{1,2})\.(\d{1,2})\.(\d{4})",
+        text,
+    )
+    if not m:
+        return None, None
+    d1, m1, d2, m2, y2 = map(int, m.groups())
+    y1 = y2
+    if m1 > m2:  # action can cross New Year
+        y1 -= 1
+    try:
+        return datetime(y1, m1, d1).date(), datetime(y2, m2, d2).date()
+    except ValueError:
+        return None, None
+
+
+def parse_dis_actions_html(content, today=TODAY):
+    """Convert DIS's public weekly-action block into standard price-list-like rows.
+
+    This intentionally imports only products publicly shown as active actions on the
+    official DIS site. It does NOT pretend to be a complete DIS price list.
+    """
+    html = content.decode("utf-8", errors="replace")
+    soup = BeautifulSoup(html, "html.parser")
+    text = " ".join(soup.stripped_strings)
+    text = re.sub(r"\s+", " ", text)
+
+    anchor = re.search(r"ove nedelje na akciji", text, re.I)
+    if not anchor:
+        raise ValueError("DIS page has no weekly-action block")
+
+    # Use a bounded text slice so unrelated prices elsewhere on the page are ignored.
+    raw_start = max(0, anchor.start() - 50)
+    action_text = text[raw_start:]
+    stop = re.search(r"klikni i zakora(?:c|č)i|novosti|dis tv", action_text, re.I)
+    if stop:
+        action_text = action_text[:stop.start()]
+
+    start, end = _dis_action_period(action_text)
+    if not start or not end:
+        raise ValueError("DIS action period could not be parsed")
+    if today < start or today > end:
+        raise ValueError(f"DIS action block is not current ({start} to {end})")
+
+    # Typical public listing: REGULAR SALE Product name ... REGULAR SALE Product name ...
+    price_pat = r"\d{1,5}(?:[.,]\d{2})"
+    pair_re = re.compile(
+        rf"(?P<regular>{price_pat})\s+(?P<sale>{price_pat})\s+(?P<name>.+?)"
+        rf"(?=(?:\s+{price_pat}\s+{price_pat}\s+)|$)",
+        re.I,
+    )
+
+    rows = []
+    for m in pair_re.finditer(action_text):
+        regular = parse_number(m.group("regular"))
+        sale = parse_number(m.group("sale"))
+        name = re.sub(r"\s+", " ", m.group("name")).strip(" -|•")
+        if not name or regular is None or sale is None:
+            continue
+        if sale <= 0 or regular <= 0 or sale > regular * 1.05:
+            continue
+
+        # Infer the raw selling unit only when the title clearly ends in kg/l.
+        nname = norm(name)
+        raw_unit = ""
+        if re.search(r"(?:^|\s)kg\s*$", nname):
+            raw_unit = "kg"
+        elif re.search(r"(?:^|\s)l\s*$", nname):
+            raw_unit = "l"
+
+        rows.append({
+            "KATEGORIJA": "",
+            "NAZIV KATEGORIJE": "DIS akcije",
+            "Naziv proizvoda": name,
+            "Naziv trgovca - formata": "DIS",
+            "Jedinica mere": raw_unit,
+            "Redovna cena": f"{regular:.2f}",
+            "Snižena cena": f"{sale:.2f}",
+            "Cena po jedinici mere": "",
+            "Datum početka sniženja": start.strftime("%d-%m-%Y"),
+            "Datum kraja sniženja": end.strftime("%d-%m-%Y"),
+            "Datum cenovnika": today.strftime("%d-%m-%Y"),
+            "Barkod proizvoda": "",
+            "VRSTA_CENOVNIKA": "VAZECI_CENOVNIK",
+        })
+
+    if not rows:
+        raise ValueError("DIS weekly-action block yielded no products")
+    return rows
+
+
 def fetch_source(src):
     errors = []
     for url in src.get("urls", []):
@@ -440,13 +563,16 @@ def fetch_source(src):
                 timeout=60,
                 headers={
                     "User-Agent": "Mozilla/5.0 MojeCene/1.0",
-                    "Accept": "text/csv,text/plain,*/*",
+                    "Accept": "text/csv,text/html,text/plain,*/*",
                 },
             )
             response.raise_for_status()
             if len(response.content) < 100:
                 raise ValueError("downloaded file is suspiciously small")
-            rows = parse_csv_bytes(response.content)
+            if src.get("type") == "dis_actions_html":
+                rows = parse_dis_actions_html(response.content)
+            else:
+                rows = parse_csv_bytes(response.content)
             return rows, url, None
         except Exception as exc:
             errors.append(f"{url}: {exc}")
@@ -483,7 +609,7 @@ def build_results_for_source(src, rows, products, settings):
         rejected = Counter()
 
         for row in usable:
-            ok, reason, pack = match_product(row, product)
+            ok, reason, pack = match_product(row, product, ignore_category=src.get("skip_category_filter", False))
             if not ok:
                 rejected[reason] += 1
                 continue
@@ -530,6 +656,7 @@ def build_results_for_source(src, rows, products, settings):
             "parser_version": PARSER_VERSION,
             "source_id": src["id"],
             "store": src["name"],
+            "source_scope": src.get("scope", "full"),
             "product_id": product["id"],
             "product": product["name"],
             "category": product["category"],
@@ -580,6 +707,7 @@ def main():
                 "store": src["name"],
                 "enabled": False,
                 "ok": None,
+                "scope": src.get("scope", "full"),
                 "note": src.get("note", ""),
             })
             continue
@@ -600,6 +728,8 @@ def main():
                 "ok": False,
                 "error": error,
                 "carried_previous_results": len(carried),
+                "scope": src.get("scope", "full"),
+                "note": src.get("note", ""),
             })
             continue
 
@@ -618,6 +748,8 @@ def main():
             "downloaded_rows": len(rows),
             "usable_current_rows": usable_rows,
             "selected_results": len(selected),
+            "scope": src.get("scope", "full"),
+            "note": src.get("note", ""),
         })
 
     if success_count == 0:
@@ -637,6 +769,7 @@ def main():
         "generated_at": NOW.isoformat(),
         "date": str(TODAY),
         "parser_version": PARSER_VERSION,
+        "tracked_product_count": len(products),
         "results": all_results,
         "sources": source_status,
     }

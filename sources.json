@@ -15,7 +15,9 @@
       "name": "Maxi",
       "enabled": true,
       "type": "standard_csv",
-      "allowed_formats_exact": ["Maxi"],
+      "allowed_formats_exact": [
+        "Maxi"
+      ],
       "urls": [
         "https://tsmdelhaizeserbia.delhaize.rs/PublicDoc/cene_proizvoda_Delhaize.csv",
         "https://data.gov.rs/sr/datasets/r/aa0a4ab4-1dc8-49e2-abef-67612a2abcbb"
@@ -34,10 +36,14 @@
     {
       "id": "dis",
       "name": "DIS",
-      "enabled": false,
-      "type": "standard_csv",
-      "urls": [],
-      "note": "Isključen dok ne postoji pouzdan aktuelni mašinski čitljiv feed. Ne koristimo zastarele podatke kao današnje cene."
+      "enabled": true,
+      "type": "dis_actions_html",
+      "urls": [
+        "https://www.dis.rs/"
+      ],
+      "skip_category_filter": true,
+      "scope": "action_only",
+      "note": "DIS je uključen preko zvaničnog sajta; prikazuju se samo aktuelne akcijske ponude koje sajt javno objavljuje, ne kompletan redovan cenovnik."
     },
     {
       "id": "dm",

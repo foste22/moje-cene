@@ -306,6 +306,114 @@ class ParserTests(unittest.TestCase):
         self.assertAlmostEqual(prices["current"], 849.98, places=2)
         self.assertIn("official_unit_mismatch", prices["warnings"])
 
+    def test_plain_batak_or_karabatak_matches(self):
+        r = row(
+            KATEGORIJA="8",
+            **{
+                "NAZIV KATEGORIJE": "Sveže i prerađeno meso",
+                "Naziv proizvoda": "Pileci karabatak 1kg",
+                "Jedinica mere": "kg",
+                "Redovna cena": "299.99",
+            }
+        )
+        self.assertTrue(up.match_product(r, PRODUCTS["batak_karabatak"])[0])
+
+    def test_pork_ribs_match(self):
+        r = row(
+            KATEGORIJA="8",
+            **{
+                "NAZIV KATEGORIJE": "Sveže i prerađeno meso",
+                "Naziv proizvoda": "Sveza svinjska rebra kg",
+                "Jedinica mere": "kg",
+                "Redovna cena": "499.99",
+            }
+        )
+        self.assertTrue(up.match_product(r, PRODUCTS["svinjska_rebra"])[0])
+
+    def test_milk_rejects_chocolate(self):
+        plain = row(**{"Naziv proizvoda": "Mleko 2.8% 1l", "Redovna cena": "109.99"})
+        choc = row(**{"Naziv proizvoda": "Cokoladno mleko 1l", "Redovna cena": "99.99"})
+        self.assertTrue(up.match_product(plain, PRODUCTS["mleko"])[0])
+        self.assertFalse(up.match_product(choc, PRODUCTS["mleko"])[0])
+
+    def test_yogurt_kg_pack_can_be_compared_per_liter(self):
+        r = row(**{
+            "Naziv proizvoda": "Jogurt 2.8%mm 1kg",
+            "Redovna cena": "119.99",
+        })
+        p = PRODUCTS["jogurt"]
+        ok, _, pack = up.match_product(r, p)
+        self.assertTrue(ok)
+        prices = up.normalize_prices(r, p, pack)
+        self.assertEqual(prices["current"], 119.99)
+        self.assertEqual(prices["method"], "dairy_kg_as_l_approx")
+
+    def test_sour_cream_standard_cup_only(self):
+        good = row(**{"Naziv proizvoda": "Kisela pavlaka 20% 180g", "Redovna cena": "79.99"})
+        large = row(**{"Naziv proizvoda": "Kisela pavlaka 20% 700g", "Redovna cena": "249.99"})
+        self.assertTrue(up.match_product(good, PRODUCTS["kisela_pavlaka"])[0])
+        ok, reason, _ = up.match_product(large, PRODUCTS["kisela_pavlaka"])
+        self.assertFalse(ok)
+        self.assertEqual(reason, "package_too_large")
+
+    def test_rice_pasta_sugar_normalization(self):
+        examples = [
+            ("pirinac", "Pirinac dugo zrno 500g", "79.99", 159.98),
+            ("testenina", "Testenina spirala 400g", "59.99", 149.98),
+            ("secer", "Secer beli kristal 1kg", "89.99", 89.99),
+        ]
+        for pid, name, raw, expected in examples:
+            p = PRODUCTS[pid]
+            r = row(**{"Naziv proizvoda": name, "Redovna cena": raw})
+            ok, _, pack = up.match_product(r, p)
+            self.assertTrue(ok, pid)
+            prices = up.normalize_prices(r, p, pack)
+            self.assertAlmostEqual(prices["current"], expected, places=2)
+
+    def test_other_fish_tracks_trout_but_not_hake(self):
+        trout = row(
+            KATEGORIJA="9",
+            **{
+                "NAZIV KATEGORIJE": "Sveža i prerađena riba",
+                "Naziv proizvoda": "Pastrmka cela kg",
+                "Jedinica mere": "kg",
+                "Redovna cena": "649.99",
+            }
+        )
+        hake = row(
+            KATEGORIJA="9",
+            **{
+                "NAZIV KATEGORIJE": "Sveža i prerađena riba",
+                "Naziv proizvoda": "Oslic kg",
+                "Jedinica mere": "kg",
+                "Redovna cena": "499.99",
+            }
+        )
+        self.assertTrue(up.match_product(trout, PRODUCTS["ostala_riba"])[0])
+        self.assertFalse(up.match_product(hake, PRODUCTS["ostala_riba"])[0])
+
+    def test_dis_action_html_parser_is_current_and_action_only(self):
+        html = b"""
+        <html><body>
+        <h2>Ove nedelje na akciji</h2>
+        <div>25.09 - 01.10.2026</div>
+        <a>159.99 149.99 Azzuro Mare tuna komadi 160 G</a>
+        <a>139.99 99.99 Makfa bronze spagete 500 g</a>
+        <a>799.99 499.99 Sveza svinjska rebra kg</a>
+        <h2>Klikni i zakoraci u svet pogodnosti</h2>
+        </body></html>
+        """
+        rows = up.parse_dis_actions_html(html, today=date(2026, 9, 27))
+        self.assertEqual(len(rows), 3)
+        self.assertEqual(rows[0]["Snižena cena"], "149.99")
+        self.assertEqual(rows[2]["Jedinica mere"], "kg")
+
+    def test_dis_stale_action_html_is_rejected(self):
+        html = b"""<h2>Ove nedelje na akciji</h2><div>07.08 - 13.08.2026</div>
+        <a>159.99 149.99 Tuna 160g</a><h2>Novosti</h2>"""
+        with self.assertRaises(ValueError):
+            up.parse_dis_actions_html(html, today=date(2026, 9, 27))
+
 
 if __name__ == "__main__":
     unittest.main()
