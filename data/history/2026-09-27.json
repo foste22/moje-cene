@@ -1,29 +1,6 @@
 [
   {
     "date": "2026-09-27",
-    "store": "Maxi / Delhaize",
-    "product_id": "batak_karabatak",
-    "product": "Batak + karabatak",
-    "matched_product": "Pileci batak i karabatak 540gr Sveze M",
-    "category": "Sveže i prerađeno meso",
-    "store_format": "Maxi",
-    "price": 249.99,
-    "regular_price": 249.99,
-    "sale_price": null,
-    "target": 300,
-    "unit": "RSD/kg",
-    "status": "KUPI",
-    "package": {
-      "kg": null,
-      "l": null,
-      "count": null,
-      "variable_weight": false
-    },
-    "barcode": "8600197386783",
-    "price_list_date": "27-09-2026"
-  },
-  {
-    "date": "2026-09-27",
     "store": "Lidl",
     "product_id": "brasno",
     "product": "Brašno T-400/500",
@@ -89,29 +66,6 @@
       "variable_weight": false
     },
     "barcode": "8605044506505",
-    "price_list_date": "27-09-2026"
-  },
-  {
-    "date": "2026-09-27",
-    "store": "Lidl",
-    "product_id": "celo_pile",
-    "product": "Celo pile",
-    "matched_product": "Celo pile MK12,46 ca. 1,78 kg",
-    "category": "Sveže i prerađeno meso",
-    "store_format": "Lidl Srbija KD",
-    "price": 160.11,
-    "regular_price": 284.99,
-    "sale_price": null,
-    "target": 250,
-    "unit": "RSD/kg",
-    "status": "KUPI",
-    "package": {
-      "kg": 1.78,
-      "l": null,
-      "count": null,
-      "variable_weight": false
-    },
-    "barcode": "2704342000000",
     "price_list_date": "27-09-2026"
   },
   {
@@ -336,10 +290,10 @@
     "unit": "RSD/kg",
     "status": "KUPI",
     "package": {
-      "kg": 1.0,
+      "kg": null,
       "l": null,
       "count": null,
-      "variable_weight": false
+      "variable_weight": true
     },
     "barcode": "8606003129643",
     "price_list_date": "27-09-2026"
@@ -382,35 +336,12 @@
     "unit": "RSD/kg",
     "status": "KUPI",
     "package": {
-      "kg": 1.0,
-      "l": null,
-      "count": null,
-      "variable_weight": false
-    },
-    "barcode": "2703799000000",
-    "price_list_date": "27-09-2026"
-  },
-  {
-    "date": "2026-09-27",
-    "store": "Maxi / Delhaize",
-    "product_id": "pileci_file",
-    "product": "Pileći file",
-    "matched_product": "Pileci file 480 gr Sveze M",
-    "category": "Sveže i prerađeno meso",
-    "store_format": "Maxi",
-    "price": 403.2,
-    "regular_price": 403.2,
-    "sale_price": null,
-    "target": 500,
-    "unit": "RSD/kg",
-    "status": "KUPI",
-    "package": {
       "kg": null,
       "l": null,
       "count": null,
-      "variable_weight": false
+      "variable_weight": true
     },
-    "barcode": "8600197386790",
+    "barcode": "2703799000000",
     "price_list_date": "27-09-2026"
   },
   {
@@ -579,11 +510,11 @@
     "store": "Maxi / Delhaize",
     "product_id": "tunjevina",
     "product": "Tunjevina konzerva",
-    "matched_product": "Tuna sal.Mexico Maxi 160g",
+    "matched_product": "Tunjevina komadici Maxi 160g",
     "category": "Sveža i prerađena riba",
     "store_format": "Maxi",
-    "price": 134.99,
-    "regular_price": 134.99,
+    "price": 145.99,
+    "regular_price": 145.99,
     "sale_price": null,
     "target": 150,
     "unit": "RSD/kom",
@@ -594,7 +525,7 @@
       "count": null,
       "variable_weight": false
     },
-    "barcode": "8600197254600",
+    "barcode": "8600197254808",
     "price_list_date": "27-09-2026"
   },
   {
@@ -832,22 +763,68 @@
     "store": "Lidl",
     "product_id": "batak_karabatak",
     "product": "Batak + karabatak",
-    "matched_product": "Pileći batak i karabatak MIX MK12 ca. 1kg",
+    "matched_product": "Pileći batak i karabatak MK9 ca. 750g",
     "category": "Sveže i prerađeno meso",
     "store_format": "Lidl Srbija KD",
-    "price": 399.99,
-    "regular_price": 399.99,
+    "price": 379.99,
+    "regular_price": 379.99,
     "sale_price": null,
     "target": 300,
     "unit": "RSD/kg",
     "status": "CEKAJ",
     "package": {
-      "kg": 1.0,
+      "kg": null,
+      "l": null,
+      "count": null,
+      "variable_weight": true
+    },
+    "barcode": "2703319000000",
+    "price_list_date": "27-09-2026"
+  },
+  {
+    "date": "2026-09-27",
+    "store": "Maxi / Delhaize",
+    "product_id": "batak_karabatak",
+    "product": "Batak + karabatak",
+    "matched_product": "Domaci pileci batak i karabatak",
+    "category": "Sveže i prerađeno meso",
+    "store_format": "Maxi",
+    "price": 379.99,
+    "regular_price": 379.99,
+    "sale_price": null,
+    "target": 300,
+    "unit": "RSD/kg",
+    "status": "CEKAJ",
+    "package": {
+      "kg": null,
       "l": null,
       "count": null,
       "variable_weight": false
     },
-    "barcode": "2701837000000",
+    "barcode": "0000002820621",
+    "price_list_date": "27-09-2026"
+  },
+  {
+    "date": "2026-09-27",
+    "store": "Lidl",
+    "product_id": "celo_pile",
+    "product": "Celo pile",
+    "matched_product": "Celo pile MK12,46 ca. 1,78 kg",
+    "category": "Sveže i prerađeno meso",
+    "store_format": "Lidl Srbija KD",
+    "price": 284.99,
+    "regular_price": 284.99,
+    "sale_price": null,
+    "target": 250,
+    "unit": "RSD/kg",
+    "status": "CEKAJ",
+    "package": {
+      "kg": null,
+      "l": null,
+      "count": null,
+      "variable_weight": true
+    },
+    "barcode": "2704342000000",
     "price_list_date": "27-09-2026"
   },
   {
@@ -957,12 +934,35 @@
     "unit": "RSD/kg",
     "status": "CEKAJ",
     "package": {
-      "kg": 1.0,
+      "kg": null,
+      "l": null,
+      "count": null,
+      "variable_weight": true
+    },
+    "barcode": "2701798000000",
+    "price_list_date": "27-09-2026"
+  },
+  {
+    "date": "2026-09-27",
+    "store": "Maxi / Delhaize",
+    "product_id": "pileci_file",
+    "product": "Pileći file",
+    "matched_product": "Domaci pileci file",
+    "category": "Sveže i prerađeno meso",
+    "store_format": "Maxi",
+    "price": 839.99,
+    "regular_price": 839.99,
+    "sale_price": null,
+    "target": 500,
+    "unit": "RSD/kg",
+    "status": "CEKAJ",
+    "package": {
+      "kg": null,
       "l": null,
       "count": null,
       "variable_weight": false
     },
-    "barcode": "2701798000000",
+    "barcode": "0000002820644",
     "price_list_date": "27-09-2026"
   },
   {
@@ -1049,10 +1049,10 @@
     "unit": "RSD/kg",
     "status": "CEKAJ",
     "package": {
-      "kg": 1.0,
+      "kg": null,
       "l": null,
       "count": null,
-      "variable_weight": false
+      "variable_weight": true
     },
     "barcode": "2700409000000",
     "price_list_date": "27-09-2026"
@@ -1095,12 +1095,35 @@
     "unit": "RSD/kg",
     "status": "CEKAJ",
     "package": {
-      "kg": 1.0,
+      "kg": null,
       "l": null,
       "count": null,
-      "variable_weight": false
+      "variable_weight": true
     },
     "barcode": "2700415000000",
+    "price_list_date": "27-09-2026"
+  },
+  {
+    "date": "2026-09-27",
+    "store": "Lidl",
+    "product_id": "svinjski_vrat",
+    "product": "Svinjski vrat",
+    "matched_product": "Svinjski vrat narez. sa koskom MK10 ca. 500g",
+    "category": "Sveže i prerađeno meso",
+    "store_format": "Lidl Srbija KD",
+    "price": 749.99,
+    "regular_price": 749.99,
+    "sale_price": null,
+    "target": 600,
+    "unit": "RSD/kg",
+    "status": "CEKAJ",
+    "package": {
+      "kg": null,
+      "l": null,
+      "count": null,
+      "variable_weight": true
+    },
+    "barcode": "2701766000000",
     "price_list_date": "27-09-2026"
   },
   {
@@ -1124,29 +1147,6 @@
       "variable_weight": false
     },
     "barcode": "8606112915793",
-    "price_list_date": "27-09-2026"
-  },
-  {
-    "date": "2026-09-27",
-    "store": "Lidl",
-    "product_id": "svinjski_vrat",
-    "product": "Svinjski vrat",
-    "matched_product": "Svinjski vrat nar.s.k., marin. MK8 ca 500g",
-    "category": "Sveže i prerađeno meso",
-    "store_format": "Lidl Srbija KD",
-    "price": 799.99,
-    "regular_price": 799.99,
-    "sale_price": null,
-    "target": 600,
-    "unit": "RSD/kg",
-    "status": "CEKAJ",
-    "package": {
-      "kg": null,
-      "l": null,
-      "count": null,
-      "variable_weight": true
-    },
-    "barcode": "2700680000000",
     "price_list_date": "27-09-2026"
   }
 ]
