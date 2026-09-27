@@ -4,46 +4,62 @@
       "id": "lidl",
       "name": "Lidl",
       "enabled": true,
-      "url": "https://kompanija.lidl.rs/content/download/165294/fileupload/cene_proizvoda_Lidl.csv",
-      "fallback": "https://data.gov.rs/sr/datasets/r/79be27de-a311-489d-86ae-6df3c7a65345"
+      "type": "standard_csv",
+      "urls": [
+        "https://kompanija.lidl.rs/content/download/165294/fileupload/cene_proizvoda_Lidl.csv",
+        "https://data.gov.rs/sr/datasets/r/79be27de-a311-489d-86ae-6df3c7a65345"
+      ]
     },
     {
       "id": "maxi",
-      "name": "Maxi / Delhaize",
+      "name": "Maxi",
       "enabled": true,
-      "url": "https://tsmdelhaizeserbia.delhaize.rs/PublicDoc/cene_proizvoda_Delhaize.csv",
-      "fallback": "https://data.gov.rs/sr/datasets/r/aa0a4ab4-1dc8-49e2-abef-67612a2abcbb"
+      "type": "standard_csv",
+      "allowed_formats_exact": ["Maxi"],
+      "urls": [
+        "https://tsmdelhaizeserbia.delhaize.rs/PublicDoc/cene_proizvoda_Delhaize.csv",
+        "https://data.gov.rs/sr/datasets/r/aa0a4ab4-1dc8-49e2-abef-67612a2abcbb"
+      ]
     },
     {
       "id": "aman",
       "name": "Aman",
       "enabled": true,
-      "url": "https://data.gov.rs/s/resources/cenovnici-proizvoda-prema-pravilniku-o-uslovima-sadrzaju-i-nacinu-objavljivanja-cenovnika-aman-d-o-o/20260910-073326/cene-proizvoda-aman-doo.csv",
-      "fallback": "https://data.gov.rs/sr/datasets/r/90465a2b-ad9f-4c42-b727-4bbc2bcbd7bb"
+      "type": "standard_csv",
+      "urls": [
+        "https://data.gov.rs/s/resources/cenovnici-proizvoda-prema-pravilniku-o-uslovima-sadrzaju-i-nacinu-objavljivanja-cenovnika-aman-d-o-o/20260910-073326/cene-proizvoda-aman-doo.csv",
+        "https://data.gov.rs/sr/datasets/r/90465a2b-ad9f-4c42-b727-4bbc2bcbd7bb"
+      ]
     },
     {
       "id": "dis",
       "name": "DIS",
       "enabled": false,
-      "url": "",
-      "fallback": "",
-      "note": "Dodati zvanični mašinski čitljiv izvor kada ga potvrdimo."
+      "type": "standard_csv",
+      "urls": [],
+      "note": "Isključen dok ne postoji pouzdan aktuelni mašinski čitljiv feed. Ne koristimo zastarele podatke kao današnje cene."
     },
     {
       "id": "dm",
       "name": "dm",
       "enabled": false,
-      "url": "",
-      "fallback": "",
-      "note": "Drogerija – izvor tek treba povezati."
+      "type": "standard_csv",
+      "urls": [
+        "https://content.services.dmtech.com/rootpage-dm-shop-sr-rs/resource/blob/3615914/04c54c959d8da468e1d20db514835b2b/cene-proizvoda-dmdrogeriemarkt-data.csv",
+        "https://data.gov.rs/sr/datasets/r/796d17e2-fa90-4e06-9b58-f25bf381c027"
+      ],
+      "note": "Izvor je spreman; uključi kada dodamo proizvode za higijenu i kućnu hemiju."
     },
     {
       "id": "lilly",
       "name": "Lilly",
       "enabled": false,
-      "url": "",
-      "fallback": "",
-      "note": "Drogerija – izvor tek treba povezati."
+      "type": "standard_csv",
+      "urls": [
+        "https://mis.lilly.rs/cene_proizvoda_Lilly_Drogerie.csv",
+        "https://data.gov.rs/sr/datasets/r/2652429c-44e8-405b-b22e-12278eb59b96"
+      ],
+      "note": "Izvor je spreman; uključi kada dodamo proizvode za higijenu i kućnu hemiju."
     }
   ]
 }
