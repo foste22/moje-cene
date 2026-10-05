@@ -17,8 +17,8 @@
     "enabled": true,
     "ok": true,
     "used_url": "https://tsmdelhaizeserbia.delhaize.rs/PublicDoc/cene_proizvoda_Delhaize.csv",
-    "downloaded_rows": 82563,
-    "usable_current_rows": 6385,
+    "downloaded_rows": 81046,
+    "usable_current_rows": 6003,
     "selected_results": 23,
     "scope": "full",
     "note": ""
@@ -29,8 +29,8 @@
     "enabled": true,
     "ok": true,
     "used_url": "https://data.gov.rs/sr/datasets/r/90465a2b-ad9f-4c42-b727-4bbc2bcbd7bb",
-    "downloaded_rows": 21423,
-    "usable_current_rows": 7129,
+    "downloaded_rows": 21401,
+    "usable_current_rows": 7107,
     "selected_results": 23,
     "scope": "full",
     "note": ""
