@@ -1,0 +1,5851 @@
+{
+  "generated_at": "2026-10-08T14:03:15.413488+02:00",
+  "parser_version": "final-1.1",
+  "sources": {
+    "lidl": {
+      "celo_pile": {
+        "accepted": [
+          {
+            "name": "Celo pile MK12,46 ca. 1,78 kg",
+            "price": 284.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.78,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2729,
+          "required_term": 316
+        }
+      },
+      "pileca_ledja": {
+        "accepted": [
+          {
+            "name": "Pileća leđa MK12 ca. 1kg",
+            "price": 145.49,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2729,
+          "required_term": 316
+        }
+      },
+      "batak_karabatak": {
+        "accepted": [
+          {
+            "name": "Pileći batak i karabatak MK9 ca. 750g",
+            "price": 379.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.75,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Pileći batak i karabatak MIX MK12 ca. 1kg",
+            "price": 399.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Pileći batak MK12 ca. 1kg",
+            "price": 429.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Pileći batak MK18 500g",
+            "price": 479.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pileći karabatak bez kože i ko.MK18 500g",
+            "price": 639.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2729,
+          "required_term": 312
+        }
+      },
+      "pileci_file": {
+        "accepted": [
+          {
+            "name": "Pileći file MK12 ca. 1kg",
+            "price": 779.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Pileći file MK18 500g",
+            "price": 839.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2729,
+          "required_term": 314,
+          "excluded_term": 1
+        }
+      },
+      "svinjski_vrat": {
+        "accepted": [
+          {
+            "name": "Svinjski vrat narez. sa koskom MK10 ca. 500g",
+            "price": 749.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Svinj. vrat bez koske narezan MK20 500g",
+            "price": 1099.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2729,
+          "required_term": 311,
+          "excluded_term": 4
+        }
+      },
+      "svinjska_plecka": {
+        "accepted": [
+          {
+            "name": "Svinjska plećka komad MK8 ca. 1000 g",
+            "price": 789.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Svinjski gulaš od plećke MK15 850g",
+            "price": 882.34,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.85,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Svinjski gulaš od plećke MK24 500g",
+            "price": 959.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2729,
+          "required_term": 314
+        }
+      },
+      "svinjski_but": {
+        "accepted": [
+          {
+            "name": "Svinjski but komad MK8 ca. 1000g",
+            "price": 799.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2729,
+          "required_term": 316
+        }
+      },
+      "jaja": {
+        "accepted": [
+          {
+            "name": "Jaja iz podnog uzgoja M 30/ 1 MK8 30kom.",
+            "price": 16.0,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 30,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jaja iz podnog uzgoja S 10/1 MK20 10kom.",
+            "price": 16.5,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 10,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jaja iz podnog uzgoja M 15/ 1 MK16 15kom.",
+            "price": 17.33,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 15,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jaja iz podnog uzgoja M 10/1 MK20 10kom.",
+            "price": 18.0,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 10,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jaja iz pod. uzgoja L MK20 10kom.",
+            "price": 19.0,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 10,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jaja iz sl. uzg. M6/1 MK12 6kom.",
+            "price": 23.33,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 6,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2718,
+          "required_term": 322
+        }
+      },
+      "oslic": {
+        "accepted": [
+          {
+            "name": "Oslić hek MK9,5 cca 950g",
+            "price": 489.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.95,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Filet oslića MK20 500g",
+            "price": 1059.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2784,
+          "required_term": 260
+        }
+      },
+      "skusa": {
+        "accepted": [
+          {
+            "name": "Skuša cela MK6 1000g",
+            "price": 370.49,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Fileti skuše u ulju MK48 150g",
+            "price": 1333.27,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.15,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Fileti skuše u paradajz sosu MK48 150g",
+            "price": 1333.27,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.15,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Dimljeni fileti skuše SK8 ca.150-165g",
+            "price": 1799.9,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.165,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2784,
+          "required_term": 258
+        }
+      },
+      "tunjevina": {
+        "accepted": [
+          {
+            "name": "Giana Tunjevina u b.ulj.usit. MK48 170g",
+            "price": 114.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Tunjevina komadi u sop. soku MK48 145g",
+            "price": 139.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.145,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Tunjevina komadi u sunc. ulju MK48 145g",
+            "price": 149.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.145,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "MSC Tunjevina komadi u suncokr.MK48 185g",
+            "price": 209.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.185,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Tuna u masl. ulju (ATG 102) MK48 145g",
+            "price": 229.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.145,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Tunjevina komadi u sop. soku MK30 3x80g",
+            "price": 269.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.24,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Tunjevina u sun. ulju komadi MK30 3x70g",
+            "price": 273.49,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.21,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Tunjevina i grašak MK24 2x160g",
+            "price": 299.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.32,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2995,
+          "required_term": 38,
+          "excluded_term": 2
+        }
+      },
+      "sardina": {
+        "accepted": [
+          {
+            "name": "Sardine u suc. ulju (OM 90g) MK50 125g",
+            "price": 119.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Royal Sardine u sunc. ulju MK40 125g",
+            "price": 119.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Eva Sardine u biljnom ulju MK30 100g",
+            "price": 184.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.1,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2995,
+          "required_term": 48
+        }
+      },
+      "brasno": {
+        "accepted": [
+          {
+            "name": "Brašno tip 500 MK10 1kg",
+            "price": 47.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Brašno tip 400 MK1 5kg",
+            "price": 50.0,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 5.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Brašno tip 400 MK10 1kg",
+            "price": 53.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 3013,
+          "regex": 6,
+          "required_term": 23,
+          "excluded_term": 1
+        }
+      },
+      "pasulj": {
+        "accepted": [
+          {
+            "name": "Beli pasulj - Gradištanac MK10 ca. 1 kg",
+            "price": 219.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Beli pasulj - Gradištanac MK18 500g",
+            "price": 299.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Šareni pasulj - Cranberry MK10 ca 1kg",
+            "price": 349.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Beli pasulj - Tetovac MK8 1kg",
+            "price": 399.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Šareni pasulj/MK8 1000g",
+            "price": 399.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 3031,
+          "required_term": 9,
+          "excluded_term": 1
+        }
+      },
+      "ulje": {
+        "accepted": [
+          {
+            "name": "Suncokretovo ulje MK15 1l",
+            "price": 179.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Dijamant suncokretovo ulje MK15 1l",
+            "price": 196.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Prima. masl. ulje extra devič. MK12 1l",
+            "price": 789.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 3036,
+          "required_term": 4,
+          "excluded_term": 3
+        }
+      },
+      "krompir": {
+        "accepted": [
+          {
+            "name": "Krompir crveni, 5kg 5kg",
+            "price": 49.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 5.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Domaći krompir beli, 5kg 5kg",
+            "price": 50.0,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 5.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Domaći krompir beli, rinfuz 1kg",
+            "price": 69.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Domaći krompir crveni, rinfuz 1kg",
+            "price": 74.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Domaći krompir beli oprani, rinfuz 1kg",
+            "price": 99.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Domaći krompir crveni oprani, rinfu 1kg",
+            "price": 99.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Slatki krompir (batat), rinfuz 1kg",
+            "price": 249.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Bio krompir beli, 1kg 1kg",
+            "price": 249.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2840,
+          "required_term": 198
+        }
+      },
+      "luk": {
+        "accepted": [
+          {
+            "name": "Luk crni, rinfuz 1kg",
+            "price": 39.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Bio domaći luk crni, 500g 500g",
+            "price": 399.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2840,
+          "required_term": 201,
+          "excluded_term": 1,
+          "package_too_large": 2
+        }
+      },
+      "sargarepa": {
+        "accepted": [
+          {
+            "name": "Šargarepa, rinfuz 1kg",
+            "price": 79.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Šargarepa, 1kg pakovanje 1kg",
+            "price": 99.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Šargarepa, 500g 500g",
+            "price": 129.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Bio šargarepa, 500g 500g",
+            "price": 399.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2840,
+          "required_term": 202
+        }
+      },
+      "svinjska_rebra": {
+        "accepted": [
+          {
+            "name": "Svinj.rebra \"short ribs\" MK9 ca 900g",
+            "price": 669.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.9,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Svinjska rebra \"short ribs\" MK9 ca 900g",
+            "price": 769.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.9,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Sušena svinjska rebra MK4,2 ca. 300g",
+            "price": 946.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.3,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2729,
+          "required_term": 313,
+          "excluded_term": 1
+        }
+      },
+      "ostala_riba": {
+        "accepted": [
+          {
+            "name": "Pastrmka očišćena ca. 600g MK5,4kg ca.600g",
+            "price": 899.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 5.4,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "PP Or.sveži tolstolob.odrezak MK16 450g",
+            "price": 933.31,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.45,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Fileti har. u par.sosu,OM: 90g MK48 150g",
+            "price": 999.93,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.15,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Fileti haringe u ulju, OM:105g MK48 150g",
+            "price": 1066.6,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.15,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Brancin ca. 600g MK 7,2KG ca. 600g",
+            "price": 1399.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 7.2,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "PP Orahovica Kotleti s. šarana MK16 450g",
+            "price": 1555.53,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.45,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Orada očišćena MK 7,2KG ca. 600g",
+            "price": 1599.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 7.2,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Filet pastrmke 0,45kg MK6,75kg ca. 450g",
+            "price": 1649.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 6.75,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 2784,
+          "required_term": 247,
+          "excluded_term": 2
+        }
+      },
+      "mleko": {
+        "accepted": [
+          {
+            "name": "Dugotrajno mleko 1,5% MK12 1l",
+            "price": 89.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Dugotrajno mleko 2,8%,bez čepa MK12 1l",
+            "price": 92.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Dugotrajno mleko 2,8 % MK8 1500ml",
+            "price": 93.33,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.5,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Dugotrajno mleko 2,8% MK12 1l",
+            "price": 94.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Dugotrajno mleko 3,2% MK12 1l",
+            "price": 99.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Vojvodj. dugotrajno mleko 2,8% MK12 1l",
+            "price": 104.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Moja Kravica dugot. mleko 2,8% MK12 1l",
+            "price": 109.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sveže mleko 2,8% 1,5l MK6 1,5l",
+            "price": 115.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.5,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 3009,
+          "excluded_term": 6
+        }
+      },
+      "jogurt": {
+        "accepted": [
+          {
+            "name": "Jogurt 0,5% MK6 1kg",
+            "price": 104.99,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jogurt 2,8% 1,5kg MK6 1,5kg",
+            "price": 106.66,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jogurt 1,5% MK8 1kg",
+            "price": 114.99,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jogurt 2,8% 1kg MK6 1kg",
+            "price": 119.99,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Prob.jogurt 1% 1kg MK8 1kg",
+            "price": 119.99,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Ayran Jogurt napitak 2,2% MK8 1kg",
+            "price": 119.99,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Gusti jogurt 2,8% 1,5kg MK6 1,5kg",
+            "price": 123.33,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Moja Kravica jogurt 2,8% MK6 1,75kg",
+            "price": 128.57,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.75,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 2994,
+          "excluded_term": 24
+        }
+      },
+      "kisela_pavlaka": {
+        "accepted": [
+          {
+            "name": "Kisela pavlaka 12% MK20 180g",
+            "price": 54.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kisela pavlaka 20% MK20 180g",
+            "price": 69.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 3038,
+          "package_too_large": 6
+        }
+      },
+      "pirinac": {
+        "accepted": [
+          {
+            "name": "Pirinač dugog zrna MK10 1kg",
+            "price": 139.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pirinač okruglog zrna MK10 1kg",
+            "price": 159.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kočanski pirinač MK8 1kg",
+            "price": 199.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Basmati pirinač MK10 1kg",
+            "price": 237.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Integralni pirinač MK12 500g",
+            "price": 259.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pretkuvani pirinač MK16 4x100g",
+            "price": 286.22,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.4,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Basmati pirinač u kesici MK14 500g",
+            "price": 329.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jasmin pirinač MK10 500g",
+            "price": 339.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 3035,
+          "excluded_term": 1
+        }
+      },
+      "testenina": {
+        "accepted": [
+          {
+            "name": "Spirala - vitaminizirana MK20 500g",
+            "price": 129.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Makaroni - vitaminizirani MK20 500g",
+            "price": 129.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Špagete - vitaminizirane MK20 500g",
+            "price": 129.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Spirala Cavatappi-vitaminizi. MK20 500g",
+            "price": 129.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Durum Špagete MK24 500g",
+            "price": 155.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Durum Makaroni MK24 500g",
+            "price": 179.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Makaroni spirala 1kg MK10 1kg",
+            "price": 183.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Durum Spirala MK20 500g",
+            "price": 187.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 3027,
+          "excluded_term": 1
+        }
+      },
+      "secer": {
+        "accepted": [
+          {
+            "name": "Kukuruz šećerac, komad 1kom.",
+            "price": 59.99,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kristal šećer MK10 1kg",
+            "price": 97.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Cola sa šećerom MK12 500ml",
+            "price": 109.98,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 0.5,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Cola 0% šećera MK24 0,33l",
+            "price": 151.48,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 0.33,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Smrznuti kukuruz šećerac MK10 1000g",
+            "price": 156.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Smrznuti kukuruz šećerac MK20 450g",
+            "price": 188.87,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.45,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Energ. piće bez šećera MK24 0,25l",
+            "price": 199.96,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 0.25,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kukuruz šećerac (ATG 285g) MK12 425ml",
+            "price": 333.3,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.285,
+              "l": 0.425,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 3029,
+          "excluded_term": 4,
+          "price": 1
+        }
+      }
+    },
+    "maxi": {
+      "celo_pile": {
+        "accepted": [],
+        "rejected_counts": {
+          "category": 6491,
+          "required_term": 514
+        }
+      },
+      "pileca_ledja": {
+        "accepted": [],
+        "rejected_counts": {
+          "category": 6491,
+          "required_term": 514
+        }
+      },
+      "batak_karabatak": {
+        "accepted": [
+          {
+            "name": "Domaci pileci batak i karabatak",
+            "price": 379.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pileci batak i karabatak vakuum cca1kg",
+            "price": 379.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Pileci batak i karabatak 540gr Sveze M",
+            "price": 462.94,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.54,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Omega pileci batak I karabatak 540 gr Pr",
+            "price": 555.54,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.54,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Usitnjeno pilece meso karabatak 500g MAP",
+            "price": 699.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Punjeni pileci batak BK 600g",
+            "price": 1333.32,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.6,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6491,
+          "required_term": 507,
+          "excluded_term": 1
+        }
+      },
+      "pileci_file": {
+        "accepted": [
+          {
+            "name": "Domaci pileci file",
+            "price": 779.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pileci file cca 1kg Sveze M",
+            "price": 779.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Pileci file 480 gr Sveze M",
+            "price": 840.0,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.48,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pileci file premium 500g Sveze Meso",
+            "price": 999.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Omega pileci file 480 gr Premia",
+            "price": 1083.31,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.48,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pileci file snicle u marinadi 500g MAP",
+            "price": 1199.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Dim.pileci file 300g Premia/Maxi MAP",
+            "price": 1266.63,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.3,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Rolovani pileci file 600g Sous Vide",
+            "price": 1333.32,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.6,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6491,
+          "required_term": 502,
+          "excluded_term": 4
+        }
+      },
+      "svinjski_vrat": {
+        "accepted": [
+          {
+            "name": "Svinjski vrat sk MK",
+            "price": 699.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Svinjski vrat bez kostiju, snicle 500g",
+            "price": 1199.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6491,
+          "required_term": 507,
+          "excluded_term": 5
+        }
+      },
+      "svinjska_plecka": {
+        "accepted": [
+          {
+            "name": "Domaca svinjska plecka u komadu MAP",
+            "price": 599.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sveza svinjska plecka bk vakum Spanija",
+            "price": 653.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Svinjska plecka MK",
+            "price": 749.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Svinjska plecka 600g",
+            "price": 1333.32,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.6,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6491,
+          "required_term": 510
+        }
+      },
+      "svinjski_but": {
+        "accepted": [
+          {
+            "name": "Domaci svinjski but u komadu MAP",
+            "price": 599.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Svinj.but s.k./butkica pod kozom Delh.",
+            "price": 699.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Svinjski but bk MK",
+            "price": 749.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Svez svinjski but bk vakum Spanija",
+            "price": 799.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Svinjski but MK",
+            "price": 899.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6491,
+          "required_term": 509
+        }
+      },
+      "jaja": {
+        "accepted": [
+          {
+            "name": "Jaja iz podnog uzgoja Maxi 10/1 M",
+            "price": 19.5,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 10,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kokosija jaja M Maxi 10/1",
+            "price": 20.0,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 10,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jaja iz podnog uzgoja Maxi 10/1 L",
+            "price": 20.4,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": 10,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kokosija jaja L Maxi 10/1",
+            "price": 20.9,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 10,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jaja bogata selenom NP10/1",
+            "price": 22.0,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 10,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kokosija jaja M Maxi 15/1",
+            "price": 23.0,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 15,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Bela jaja Maxi 10/1",
+            "price": 23.4,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 10,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kokosija jaja M Maxi 30/1",
+            "price": 23.57,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 30,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6390,
+          "required_term": 598,
+          "excluded_term": 1
+        }
+      },
+      "oslic": {
+        "accepted": [
+          {
+            "name": "Smrznuti oslic bez glave Premia 1kg",
+            "price": 529.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Smrz.oslic filet 800g Frikom",
+            "price": 1936.25,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.8,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Smrz.oslic filet 400g Frikom",
+            "price": 2074.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.4,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6543,
+          "required_term": 458,
+          "excluded_term": 1
+        }
+      },
+      "skusa": {
+        "accepted": [
+          {
+            "name": "Smrznuta skusa Premia cca 1kg",
+            "price": 819.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "Skusa fileti u ulju Maxi 170g",
+            "price": 1458.76,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Skusa sa povrcem-Garden 125g",
+            "price": 1759.92,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Skusa povrce-Mediterana 125g",
+            "price": 1759.92,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Dimljena skusa Excellent 255g",
+            "price": 1960.75,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.255,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Skusa sa povrcem Izola 125g",
+            "price": 1991.92,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Skusa fileti La Perla115g",
+            "price": 1999.91,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.115,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6543,
+          "required_term": 454,
+          "excluded_term": 1
+        }
+      },
+      "tunjevina": {
+        "accepted": [
+          {
+            "name": "Tunjevina komadici Maxi 160g",
+            "price": 145.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.16,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Tunjevina komadi u salamuri Maxi 160g",
+            "price": 169.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.16,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Tunjevina komadi u bilj.ulju Maxi 160g",
+            "price": 173.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.16,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Tunjevina  kom.u sosu/mirodj.Maxi 160g",
+            "price": 194.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.16,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Tuna komadi dimlj.u biljnom ulju 160g",
+            "price": 199.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.16,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Tuna komadi u sunc.ulju Fish market 160g",
+            "price": 258.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.16,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Tunjevina komadi/salam.Fish market 160g",
+            "price": 277.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.16,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Tuna komadi u ulju Giana 170g",
+            "price": 280.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6888,
+          "required_term": 87,
+          "excluded_term": 12
+        }
+      },
+      "sardina": {
+        "accepted": [
+          {
+            "name": "Sardina u bilj.ulju&limun Maxi 105g",
+            "price": 131.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.105,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sardina u biljnom ulju Maxi 105g",
+            "price": 131.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.105,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sardina u paradajz sosu Maxi 105g",
+            "price": 131.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.105,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sardina u paradajz sosu La Perla 125g ",
+            "price": 153.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sardina u ulju La Perla 125g",
+            "price": 169.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sardina jadr.u marin.lim.bez ulja 100g",
+            "price": 199.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.1,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sardina jadranska u sunc.ulju 100g",
+            "price": 204.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.1,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sardina jadr.parad.sa povr.bez glut.100g",
+            "price": 224.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.1,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6888,
+          "required_term": 108
+        }
+      },
+      "brasno": {
+        "accepted": [
+          {
+            "name": "Psenicno brasno T500 Maxi 1kg",
+            "price": 48.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Psenicno brasno T400 glatko Maxi 1kg",
+            "price": 59.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Brasno psenicno T-500 Danubius 1kg",
+            "price": 78.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Psen.brasno T-500 Zito Promet 1kg",
+            "price": 78.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Brasno psenicno T-400 meko Danubius 1kg",
+            "price": 83.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Psen.brasno T-400 glatko Zito Promet 1kg",
+            "price": 84.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Psenicno brasno T400 ostro Maxi 1kg",
+            "price": 84.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Brasno psen.T-400 glatko Stari Mlinar1kg",
+            "price": 85.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6956,
+          "required_term": 22,
+          "excluded_term": 12,
+          "regex": 6
+        }
+      },
+      "pasulj": {
+        "accepted": [
+          {
+            "name": "Beli pasulj  Maxi  500g",
+            "price": 389.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pasulj sareni Benlian food 500g",
+            "price": 397.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Beli krupni pasulj Maxi 500g",
+            "price": 457.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pasulj tresnjevac Lucar 500g",
+            "price": 579.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pasulj Tetovac Benlian food 800g",
+            "price": 707.49,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.8,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6994,
+          "required_term": 6
+        }
+      },
+      "ulje": {
+        "accepted": [
+          {
+            "name": "Ulje suncokretovo Maxi 1l",
+            "price": 179.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Ulje Dijamant pvc 1l",
+            "price": 184.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Ulje jestivo suncokretovo Iskon 1l",
+            "price": 214.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Ulje suncokretovo Omegol Dijamant 1l",
+            "price": 380.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Ulje masl.Frantolio ext.ver.Carapelli 1l",
+            "price": 1806.0,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Ulje masl.ext.dev.Lakonija Maxi 750ml",
+            "price": 2021.33,
+            "method": "fixed_pack_volume",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": null,
+              "l": 0.75,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Ulje Extra Vergine Olitalia  250ml ",
+            "price": 2679.96,
+            "method": "fixed_pack_volume",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": null,
+              "l": 0.25,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Carapelli Organic EV masl.ulje 500ml",
+            "price": 3054.0,
+            "method": "fixed_pack_volume",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": null,
+              "l": 0.5,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6969,
+          "excluded_term": 21,
+          "required_term": 4
+        }
+      },
+      "krompir": {
+        "accepted": [
+          {
+            "name": "Krompir  domaci 5kg",
+            "price": 50.0,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 5.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Krompir beli opran",
+            "price": 89.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Krompir crveni opran",
+            "price": 109.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Krompir baby 1.5kg domaci",
+            "price": 146.66,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 1.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Krompir za kuvanje i pecenje 1.5kg domac",
+            "price": 164.66,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 1.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Krompir ljusteni 800g",
+            "price": 224.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.8,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Krompir seceni 800g",
+            "price": 287.49,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.8,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Krompir mediteranski 800g",
+            "price": 312.49,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.8,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6802,
+          "required_term": 190
+        }
+      },
+      "luk": {
+        "accepted": [
+          {
+            "name": "Luk crni domaci",
+            "price": 29.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Bio luk crni 500g",
+            "price": 399.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Luk crni kockice 150g",
+            "price": 533.27,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.15,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6802,
+          "required_term": 198,
+          "excluded_term": 1,
+          "package_too_large": 1
+        }
+      },
+      "sargarepa": {
+        "accepted": [
+          {
+            "name": "Sargarepa domaca",
+            "price": 79.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Bio sargarepa 500g",
+            "price": 399.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sargarepa 200g",
+            "price": 499.95,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.2,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sargarepa snack 500g",
+            "price": 599.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6802,
+          "required_term": 199
+        }
+      },
+      "svinjska_rebra": {
+        "accepted": [
+          {
+            "name": "Svinjska rebra BBQ 600g",
+            "price": 1499.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.6,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6491,
+          "required_term": 510,
+          "excluded_term": 3
+        }
+      },
+      "ostala_riba": {
+        "accepted": [
+          {
+            "name": "Filet lososa kom",
+            "price": 679.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Svez ociscen brancin  kom",
+            "price": 699.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sveza ociscena orada  kom",
+            "price": 714.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sveza pak. ociscena pastrmka",
+            "price": 899.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pakovana ociscena pastrmka 600g Vasovic",
+            "price": 999.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.6,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Saran ociscen vakuum Vasovic",
+            "price": 999.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Fileti Haringe u parad.sosu Maxi 170g",
+            "price": 1047.0,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Fileti Haringe u ulju Maxi 170g",
+            "price": 1117.59,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6543,
+          "required_term": 428,
+          "excluded_term": 12,
+          "price": 1
+        }
+      },
+      "mleko": {
+        "accepted": [
+          {
+            "name": "Kiselo mleko 2.8%mm Maxi 180g",
+            "price": 28.99,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kis. mleko Probiotik 2,8%mm 180g NP",
+            "price": 29.99,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kiselo mleko 2.8%mm Dr Milk casa 180g",
+            "price": 34.99,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kiselo mleko 2.8%mm Moja kravica 180g ",
+            "price": 38.99,
+            "method": "official_unit_fallback",
+            "warnings": [
+              "sale_not_normalized"
+            ],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kiselo mleko 3.2%mm Dukat casa 180g",
+            "price": 39.99,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Sapun med i mleko Premia 90g",
+            "price": 47.99,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": 0.09,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Extra kiselo mleko 6%mm casa Granice180g",
+            "price": 48.99,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kis. mleko bez lak. 2,8%mm 180g NP",
+            "price": 48.99,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 6906,
+          "excluded_term": 27
+        }
+      },
+      "jogurt": {
+        "accepted": [
+          {
+            "name": "Jogurt 0.5%mm Maxi 1kg",
+            "price": 107.99,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jogurt natur EGO 1kg",
+            "price": 109.0,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jogurt 2,8%mm Maxi 1.5kg",
+            "price": 113.33,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jogurt 2,8% mm Dukat 1,5kg",
+            "price": 113.33,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jogurt gusti Moja Kravica XXL 1,75kg",
+            "price": 114.28,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.75,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jogurt Pekarski 1.45kg PET",
+            "price": 117.23,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.45,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jogurt 2.8%mm Maxi 1kg",
+            "price": 119.99,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Jogurt Probiotik 1%mm NP 1,5kg",
+            "price": 122.66,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 6907,
+          "excluded_term": 22
+        }
+      },
+      "kisela_pavlaka": {
+        "accepted": [
+          {
+            "name": "Kisela pavlaka 12%mm Maxi 180g",
+            "price": 56.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kisela pavlaka 20%mm Maxi 180g",
+            "price": 71.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kisela pavlaka 20%mm Granice casa 180g ",
+            "price": 76.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kisela pavlaka 20%mm Dr Milk 180g",
+            "price": 77.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kisela pavlaka bez lak. 20%mm 180g NP",
+            "price": 86.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 6993,
+          "package_too_large": 7
+        }
+      },
+      "pirinac": {
+        "accepted": [
+          {
+            "name": "Pirinac dugo zrno Nychaki WM 1kg",
+            "price": 144.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pirinac beli AB 1kg",
+            "price": 167.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pirinac oblo zrno ABC 500g",
+            "price": 169.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pirinac beli ABC 1kg ",
+            "price": 169.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pirinac dugo zrno Nychaki WM 500g",
+            "price": 179.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pirinac parboiled Gustona 1kg",
+            "price": 195.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pirinac Kocanski Maxi 900g",
+            "price": 233.32,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.9,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Pirinac integralni ABC 500g",
+            "price": 249.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 6966,
+          "excluded_term": 2
+        }
+      },
+      "testenina": {
+        "accepted": [
+          {
+            "name": "Makarona koso secena Gustona 400g",
+            "price": 134.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.4,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Testenina spageta Sentella 400g",
+            "price": 149.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.4,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Spagete Gustona 400g",
+            "price": 149.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.4,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Spagete World's market 500g",
+            "price": 159.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Makarona koso secena Sentella 350g",
+            "price": 171.4,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.35,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Penne rigate World's market 500g",
+            "price": 185.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Fusilli World's market 500g",
+            "price": 191.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Makarona koso secena Danubius 400g",
+            "price": 197.47,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.4,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 6935,
+          "excluded_term": 6
+        }
+      },
+      "secer": {
+        "accepted": [
+          {
+            "name": "Secer kristal Maxi 1kg",
+            "price": 98.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Secer kristal beli Sunoko 1kg ",
+            "price": 99.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Secer kristal Crvenka 1kg",
+            "price": 101.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Smrznuti  Kukuruz .secerac Gustona1kg",
+            "price": 158.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Smrznuti kukuruz secerac Gustona 450g",
+            "price": 193.31,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.45,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kukuruz secerac Gustona 340g",
+            "price": 264.68,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.34,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Paradajz 100% bez secera ONZ 1l",
+            "price": 335.99,
+            "method": "official_unit_fallback",
+            "warnings": [
+              "sale_not_normalized"
+            ],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Kecap bez dodatog secera Dijamant 500g",
+            "price": 361.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 6963,
+          "excluded_term": 17
+        }
+      }
+    },
+    "aman": {
+      "celo_pile": {
+        "accepted": [],
+        "rejected_counts": {
+          "category": 6679,
+          "required_term": 461
+        }
+      },
+      "pileca_ledja": {
+        "accepted": [
+          {
+            "name": "SVEZE MESO PILECA LEDJA RFZ DVA BRATA 2",
+            "price": 129.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SVEZE MESO PILECA LEDJA RF CEKIN VINDIJA",
+            "price": 239.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6679,
+          "required_term": 459
+        }
+      },
+      "batak_karabatak": {
+        "accepted": [
+          {
+            "name": "SVEZE MESO PILECI BATAK SA KARABATAKOM RF SPRINBOX",
+            "price": 319.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "SVEZE MESO PILECI BATAK I KARABATAK SA DELOM KARLICE KLJUCKO",
+            "price": 359.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SVEZE MESO PILECI BATAK I KARABATAK PERUTNINA RF",
+            "price": 369.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "SVEZE MESO PILECI BATAK I KARABATAK RF CEKIN VINDIJA",
+            "price": 399.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "SVEZE MESO PILECI BATAK I KARABATAK PODLOZAK CEKIN 500G VINDIJA",
+            "price": 479.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SMRZNUTI PILECI BATAK I KARABATAK 500G VINDIJA",
+            "price": 559.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6679,
+          "excluded_term": 3,
+          "required_term": 452
+        }
+      },
+      "pileci_file": {
+        "accepted": [
+          {
+            "name": "SVEZE MESO PILECI FILE RF VUKENOVIC",
+            "price": 669.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "SVEZE MESO PILECI FILE PODLOZAK CEKIN 500G VINDIJA",
+            "price": 1039.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "FILE PILECI NEOPLANTA",
+            "price": 1429.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6679,
+          "required_term": 453,
+          "excluded_term": 5
+        }
+      },
+      "svinjski_vrat": {
+        "accepted": [
+          {
+            "name": "SVEZE MESO SVINJSKI VRAT S/K",
+            "price": 769.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6679,
+          "required_term": 453,
+          "excluded_term": 7
+        }
+      },
+      "svinjska_plecka": {
+        "accepted": [
+          {
+            "name": "SVEZE MESO SVINJSKA PLECKA  B/K",
+            "price": 679.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6679,
+          "required_term": 460
+        }
+      },
+      "svinjski_but": {
+        "accepted": [
+          {
+            "name": "SVEZE MESO SVINJSKI BUT  B/K",
+            "price": 699.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6679,
+          "required_term": 460
+        }
+      },
+      "jaja": {
+        "accepted": [
+          {
+            "name": "JAJA S KLASA RF",
+            "price": 14.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "JAJA M 10/1 DOBRO",
+            "price": 18.0,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 10,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "JAJA L KLASA 10/1 DOBRO",
+            "price": 20.0,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 10,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "JAJA M KLASA RF",
+            "price": 22.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "JAJA M KLASA  BRAVO 10/1",
+            "price": 25.0,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 10,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "JAJA OMEGA 3 6/1 IZ NASE BASTE",
+            "price": 31.67,
+            "method": "pack_count",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": 6,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 970,
+          "category": 6164
+        }
+      },
+      "oslic": {
+        "accepted": [
+          {
+            "name": "OSLIC 300-500 RF",
+            "price": 599.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "OSLIC FILET FRIKOM 400G",
+            "price": 2249.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.4,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "OSLIC U BILJNOM ULJU 100G EVA",
+            "price": 3999.9,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.1,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6513,
+          "required_term": 623,
+          "excluded_term": 1
+        }
+      },
+      "skusa": {
+        "accepted": [
+          {
+            "name": "SKUSA LOKARDA RF",
+            "price": 599.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "SKUSA RF -- FRIKOM DOO",
+            "price": 899.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "SKUSA CELA U ULJU IL CAPITANO 250G DUCLA",
+            "price": 959.96,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.25,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SKUSA DORUCAK SALATA MC QUEENS 160G DUCLA",
+            "price": 1062.44,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.16,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SKUSA FILETI U BILJNOM ULJU AZZURO MARE 170G",
+            "price": 1176.41,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SKUSA CELA U ULJU IL CAPITANO 125G DUCLA",
+            "price": 1199.92,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SKUSA FILETI IL CAPITANO 115G",
+            "price": 1304.26,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.115,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SKUSA FILETI U PARADAJZ SOSU 115G IL CAPITANO",
+            "price": 1304.26,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.115,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6513,
+          "required_term": 610,
+          "excluded_term": 1
+        }
+      },
+      "tunjevina": {
+        "accepted": [
+          {
+            "name": "TUNA KOMADICI AZZURRO MARE 160G--P",
+            "price": 109.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.16,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "TUNA KOMADI AZZURRO MARE 160GR--P",
+            "price": 149.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.16,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "TUNA KOMADICI 170G GIANA",
+            "price": 169.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "TUNJEVINA KOMADICI IL CAPITANO 170G",
+            "price": 179.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "ARGETA TUNA TIMIJAN I LIMUN 95G",
+            "price": 199.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.095,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "TUNA KOMADI 160GR GIANA YUTON",
+            "price": 199.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.16,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "TUNA KOMADICI SUPERIORE IL CAPITANO 170G DUCLA",
+            "price": 199.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "TUNJEVINA KOMADI IL CAPITANO 170G",
+            "price": 249.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 7027,
+          "required_term": 58,
+          "excluded_term": 24
+        }
+      },
+      "sardina": {
+        "accepted": [
+          {
+            "name": "SARDINA OMEGA 125G",
+            "price": 81.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SARDINA U BILJNOM ULJU IL CAPITANO 125G",
+            "price": 99.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SARDINA U ULJU IL KAPITANO 100 GR RETRO DUCLA",
+            "price": 99.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.1,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SARDINA U BILJNOM ULJU AZZURO MARE 125G",
+            "price": 114.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SARDINA U BILJNOM ULJU SA CILI PAPRIKOM 125G AZZURRO",
+            "price": 114.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SARDINA U PARADAJZ SOSU I SALAMURI 125G AZZURRO",
+            "price": 114.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SARDINA U SALAMURI I BILJNOM ULJU AZZURRO MARE 125G",
+            "price": 114.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SARDINA U ULJU LA PERLA 125G DUCLA",
+            "price": 144.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.125,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 7027,
+          "required_term": 99
+        }
+      },
+      "brasno": {
+        "accepted": [
+          {
+            "name": "BRASNO T500 BAKA ZIVKA 1KG",
+            "price": 49.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "BRASNO T-500 ZLATNA FURUNA 1KG",
+            "price": 49.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "BRASNO BAKA ZIVKA T500 5KG ZITOPROMET",
+            "price": 52.0,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 5.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "BRASNO T-400 5/1 KRNIC-UNION 7880",
+            "price": 52.0,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 5.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "BRASNO TIP500 ZLATNA FURUNA 5/1",
+            "price": 52.0,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 5.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "BRASNO T400 BAKA ZIVKA 1KG",
+            "price": 54.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "BRASNO T-400 ZLATNA FURUNA 1KG",
+            "price": 54.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "BRASNO TIP400 ZLATNA FURUNA 5/1",
+            "price": 56.0,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 5.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 7084,
+          "excluded_term": 14,
+          "regex": 9,
+          "package_too_large": 6,
+          "required_term": 9
+        }
+      },
+      "pasulj": {
+        "accepted": [
+          {
+            "name": "PASULJ GRADISTANAC 1KG",
+            "price": 244.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PASULJ BELI GRADIST--",
+            "price": 249.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PASULJ SARENI --",
+            "price": 249.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PASULJ SARENI 0.5KG ALLORO",
+            "price": 299.98,
+            "method": "fixed_pack_weight",
+            "warnings": [
+              "official_unit_mismatch"
+            ],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PASULJ SARENI 1KG ALLORO",
+            "price": 299.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PASULJ TETOVAC 1KG ALLORO",
+            "price": 299.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PASULJ TETOVAC --",
+            "price": 349.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PASULJ MIX GIANA 425GR",
+            "price": 352.92,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.425,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 7125,
+          "required_term": 6
+        }
+      },
+      "ulje": {
+        "accepted": [
+          {
+            "name": "ULJE ALLORO 1L",
+            "price": 179.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "ULJE JESTIVO SUNCICA 1L KING",
+            "price": 199.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "ULJE JESTIVO 1L DIJAMANT",
+            "price": 214.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "ULJE OMEGOL PET 1/1 - DIJAMANT",
+            "price": 349.99,
+            "method": "official_unit_fallback",
+            "warnings": [
+              "sale_not_normalized"
+            ],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "DIJAMANT ULJE ZA PRZENJE 3L",
+            "price": 550.0,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 3.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "ULJE MEDITERAN 1L-DIJAMANT",
+            "price": 579.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "ULJE OD KOMINE 1L",
+            "price": 699.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 7117,
+          "excluded_term": 14,
+          "required_term": 2
+        }
+      },
+      "krompir": {
+        "accepted": [
+          {
+            "name": "KROMPIR MLADI BELI RF",
+            "price": 69.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "KROMPIR BELI PG",
+            "price": 79.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "KROMPIR MLADI CRVENI RF",
+            "price": 89.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "BATAT-SLATKI KROMPIR",
+            "price": 229.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 7030,
+          "required_term": 106
+        }
+      },
+      "luk": {
+        "accepted": [
+          {
+            "name": "LUK CRNI S --",
+            "price": 54.91,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 7030,
+          "required_term": 109
+        }
+      },
+      "sargarepa": {
+        "accepted": [
+          {
+            "name": "SARGAREPA --",
+            "price": 69.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SARGAREPA PG",
+            "price": 69.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 7030,
+          "required_term": 108
+        }
+      },
+      "svinjska_rebra": {
+        "accepted": [],
+        "rejected_counts": {
+          "category": 6679,
+          "required_term": 461
+        }
+      },
+      "ostala_riba": {
+        "accepted": [
+          {
+            "name": "SOM PANGASIUS FILET RF",
+            "price": 599.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "SVEZA RIBA PASTRMKA",
+            "price": 739.99,
+            "method": "sold_by_kg",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PASTRMKA RF",
+            "price": 999.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "HARINGA U ULJU AZZURO MARE 170G",
+            "price": 1294.06,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SMRZNUTA SARAN SNICLA RF",
+            "price": 1399.99,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "IL CAPITANO FILET HARINGE HANSA 170G",
+            "price": 1470.53,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "LOSOS U PARADAJZ SOSU IL CAPITANO 170G",
+            "price": 1470.53,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "LOSOS U SOSU OD SENFA IL CAPITANO 170G",
+            "price": 1470.53,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.17,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "category": 6513,
+          "required_term": 608,
+          "excluded_term": 5
+        }
+      },
+      "mleko": {
+        "accepted": [
+          {
+            "name": "ZDRAVO TRAJNO MLEKO 2%1L IMLEK",
+            "price": 89.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "MLEKO KESA 2.8%MM 1L FINAGRO",
+            "price": 99.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "MLEKO PASTERIZOVANO 2.8% GLOZANI 1L MLEKARA GLOZANE",
+            "price": 99.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "MLEKO TRAJNO 2.8% ALLORO 1L",
+            "price": 99.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "MLEKO TRAJNO 2.8% TB MOJA KRAVICA 1.5L",
+            "price": 99.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.5,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "MLEKO TRAJNO 2.8% TB MOJA KRAVICA 1L IMLEK AD --",
+            "price": 99.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "MLEKO TRAJNO TB 1.5% MOJA KRAVICA 1L IMLEK AD",
+            "price": 104.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "MLEKO 2,8%MM 1L MLEKARA ZORNIC",
+            "price": 109.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 7018,
+          "excluded_term": 23,
+          "price": 3
+        }
+      },
+      "jogurt": {
+        "accepted": [
+          {
+            "name": "JOGURT 1/1 0,1% PANCEVO",
+            "price": 89.99,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "JOGURT KRAVICA 2.8% 1.75 KG PET",
+            "price": 108.57,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.75,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "JOGURT LAGANI 1% MM 1KG",
+            "price": 109.99,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "JOGURT PROBIO BOCA 0.5% MILK HOUSE 1.5L MLEKARA MILK HOUSE",
+            "price": 111.33,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.5,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "JOGURT PLANINSKI 2.8% MILK HOUSE 1.5L MLEKARA MILK HOUSE",
+            "price": 116.66,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.5,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "JOGURT 1%PET 1450G MLEKARA SUBOTICA",
+            "price": 117.23,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.45,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PEKARSKI JOGURT 1% 1.45KG PET IMLEK",
+            "price": 117.23,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 1.45,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "JOGURT PLANINSKI BOCA 2.8% MILK HOUSE 1L MLEKARA MILK HOUSE",
+            "price": 117.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 7005,
+          "excluded_term": 22,
+          "price": 1
+        }
+      },
+      "kisela_pavlaka": {
+        "accepted": [
+          {
+            "name": "PAVLAKA KISELA 20% MILK HOUSE 180G MLEKARA HOUSE",
+            "price": 67.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "KISELA PAVLAKA 20%MM 180G NATURA BELLO",
+            "price": 69.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "KISELA PAVLAKA ZIMLAND 180G ZIM",
+            "price": 69.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PAVLAKA KISELA 20% GRANICE 180G GRANICE DOO",
+            "price": 74.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PAVLAKA KISELA CASA 20% DR MILK 180G DR MILK",
+            "price": 84.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PAVLAKA KISELA GLOZANE 0.180ML MLEKARA GLOZANE",
+            "price": 86.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 0.00017999999999999998,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PAVLAKA KISELA 20% ZAPIS TARE 180ML MLEKARA SPASOJEVIC",
+            "price": 89.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 0.18,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PAVLAKA KISELA 20% CASA MOJA KRAVICA 180G IMLEK AD",
+            "price": 92.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 7109,
+          "package_too_large": 18
+        }
+      },
+      "pirinac": {
+        "accepted": [
+          {
+            "name": "GO HEALTHY PIRINAC KOCANSKI LOM 900GR",
+            "price": 133.32,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.9,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PIRINAC DUGOG ZRNA PARABOILED 1KG",
+            "price": 149.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "GO HEALTHY PIRINAC BISER 900 G",
+            "price": 188.88,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.9,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PIRINAC 1KG VANILA",
+            "price": 212.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "PIRINAC 500G VANILA",
+            "price": 213.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "GO HEALTHY PIRINAC RIZI 450G",
+            "price": 222.2,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.45,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "GO HEALTHY PIRINAC RIZI 900 G",
+            "price": 222.21,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.9,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "GO HEALTHY PIRINAC KOCANSKI LOM 450 G",
+            "price": 244.42,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.45,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 7110,
+          "excluded_term": 1
+        }
+      },
+      "testenina": {
+        "accepted": [
+          {
+            "name": "RAID SPIRALE PROTIV KOMARACA 10KOM",
+            "price": 57.0,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "TESTENINE TAGLIATELLE 400G SANTELLA",
+            "price": 142.48,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.4,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "KOSO SECENA MAKARONA 400G DANUBIUS",
+            "price": 174.97,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.4,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "TESTENINA SPAGETE BRONZE 500G MAKFA",
+            "price": 179.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "TESTENINA SPAGETE SA PARADAJZOM 500G MAKFA",
+            "price": 179.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "TESTENINA SPAGETE SA SPANACEM 500G MAKFA",
+            "price": 179.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "TESTENINE SPAGHETTI INTEGRALNI 500G BAKA ZIVKA",
+            "price": 179.98,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.5,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "MAKARONA KOSO SECENA 400G  BAKA ZIVKA",
+            "price": 182.47,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.4,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 7056,
+          "excluded_term": 7
+        }
+      },
+      "secer": {
+        "accepted": [
+          {
+            "name": "KUKURUZ SECERAC",
+            "price": 39.99,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SECER KRISTAL 1KG CRVENKA",
+            "price": 103.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SECER KRISTAL 1KG SUNOKO",
+            "price": 103.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "SECER RINFUZ -DZAK 50/1",
+            "price": 105.0,
+            "method": "variable_weight",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": null,
+              "count": null,
+              "variable_weight": true
+            }
+          },
+          {
+            "name": "KUKURUZ SECERAC KONZERVIRANI KING 400G",
+            "price": 199.97,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.4,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "KUKURUZ SECERAC SANTA 1KG",
+            "price": 229.99,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 1.0,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "KUKURUZ SECERAC SANTA 450G",
+            "price": 244.42,
+            "method": "fixed_pack_weight",
+            "warnings": [],
+            "package": {
+              "kg": 0.45,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "IMLEK OAZA NAPITAK OD BADEMA BEZ DODATOG SECERA, 1L TB EDGE",
+            "price": 339.99,
+            "method": "official_unit_fallback",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 7110,
+          "excluded_term": 11,
+          "price": 1
+        }
+      }
+    },
+    "dis": {
+      "celo_pile": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "pileca_ledja": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "batak_karabatak": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "pileci_file": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "svinjski_vrat": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "svinjska_plecka": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "svinjski_but": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "jaja": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "oslic": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "skusa": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "tunjevina": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "sardina": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "brasno": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "pasulj": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "ulje": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "krompir": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "luk": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "sargarepa": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "svinjska_rebra": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "ostala_riba": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "mleko": {
+        "accepted": [
+          {
+            "name": "Moja Kravica mleko UHT 1,5%m.m. 1 l",
+            "price": 99.99,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.0,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Mlekara Subotica sveže mleko 2% mm 1.46l PET",
+            "price": 116.43,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 1.46,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Moja Kravica kiselo mleko 2,8%m.m. 180 ml",
+            "price": 183.28,
+            "method": "fixed_pack_volume",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 0.18,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 20
+        }
+      },
+      "jogurt": {
+        "accepted": [
+          {
+            "name": "Mlekar jogurt 2.8% mm 180g čaša",
+            "price": 183.28,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Grekos jogurt 9% 400g čaša",
+            "price": 312.47,
+            "method": "dairy_kg_as_l_approx",
+            "warnings": [
+              "kg_used_as_liter_approx"
+            ],
+            "package": {
+              "kg": 0.4,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 20,
+          "excluded_term": 1
+        }
+      },
+      "kisela_pavlaka": {
+        "accepted": [
+          {
+            "name": "Mlekar kisela pavlaka 20% mm 180g čaša",
+            "price": 69.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": 0.18,
+              "l": null,
+              "count": null,
+              "variable_weight": false
+            }
+          },
+          {
+            "name": "Moja Kravica kisela pavlaka 20%m.m. 180 ml",
+            "price": 74.99,
+            "method": "per_piece",
+            "warnings": [],
+            "package": {
+              "kg": null,
+              "l": 0.18,
+              "count": null,
+              "variable_weight": false
+            }
+          }
+        ],
+        "rejected_counts": {
+          "required_term": 21
+        }
+      },
+      "pirinac": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "testenina": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      },
+      "secer": {
+        "accepted": [],
+        "rejected_counts": {
+          "required_term": 23
+        }
+      }
+    }
+  }
+}
