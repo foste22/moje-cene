@@ -29,8 +29,8 @@
     "enabled": true,
     "ok": true,
     "used_url": "https://data.gov.rs/sr/datasets/r/90465a2b-ad9f-4c42-b727-4bbc2bcbd7bb",
-    "downloaded_rows": 21429,
-    "usable_current_rows": 7135,
+    "downloaded_rows": 21420,
+    "usable_current_rows": 7126,
     "selected_results": 23,
     "scope": "full",
     "note": ""
