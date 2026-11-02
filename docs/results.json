@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-01T12:51:34.858332+01:00",
-  "date": "2026-11-01",
+  "generated_at": "2026-11-02T14:31:20.875070+01:00",
+  "date": "2026-11-02",
   "parser_version": "final-1.1",
   "tracked_product_count": 26,
   "results": [
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -38,8 +38,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -67,12 +67,12 @@
       "price_method": "fixed_pack_weight",
       "warnings": [],
       "barcode": "8600197390087",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -104,8 +104,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -116,11 +116,11 @@
       "matched_product": "Luk crni domaci",
       "source_category": "Sveže voće i povrće",
       "store_format": "Maxi",
-      "price": 39.99,
+      "price": 44.99,
       "regular_price": 44.99,
-      "sale_price": 39.99,
-      "is_sale": true,
-      "discount_pct": 11.1,
+      "sale_price": null,
+      "is_sale": false,
+      "discount_pct": null,
       "target": 50,
       "unit": "RSD/kg",
       "status": "KUPI",
@@ -133,12 +133,12 @@
       "price_method": "sold_by_kg",
       "warnings": [],
       "barcode": "0000002808402",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -170,8 +170,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -205,8 +205,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -236,12 +236,12 @@
         "kg_used_as_liter_approx"
       ],
       "barcode": "8600197211139",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -273,8 +273,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -302,12 +302,12 @@
       "price_method": "per_piece",
       "warnings": [],
       "barcode": "8600197473315",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -339,8 +339,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -348,34 +348,32 @@
       "product_id": "krompir",
       "product": "Krompir",
       "category": "Povrće",
-      "matched_product": "Krompir domaci 2.5kg",
+      "matched_product": "Krompir beli",
       "source_category": "Sveže voće i povrće",
       "store_format": "Maxi",
-      "price": 80.0,
-      "regular_price": 80.0,
-      "sale_price": null,
-      "is_sale": false,
-      "discount_pct": null,
+      "price": 79.99,
+      "regular_price": 99.99,
+      "sale_price": 79.99,
+      "is_sale": true,
+      "discount_pct": 20.0,
       "target": 80,
       "unit": "RSD/kg",
       "status": "KUPI",
       "package": {
-        "kg": 2.5,
+        "kg": null,
         "l": null,
         "count": null,
         "variable_weight": false
       },
-      "price_method": "fixed_pack_weight",
-      "warnings": [
-        "official_unit_mismatch"
-      ],
-      "barcode": "8606112083102",
-      "price_list_date": "01-11-2026",
+      "price_method": "sold_by_kg",
+      "warnings": [],
+      "barcode": "0000002808401",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -403,12 +401,12 @@
       "price_method": "official_unit_fallback",
       "warnings": [],
       "barcode": "8600197473322",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -440,8 +438,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -473,8 +471,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -502,45 +500,12 @@
       "price_method": "sold_by_kg",
       "warnings": [],
       "barcode": "8605026203194",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
-      "parser_version": "final-1.1",
-      "source_id": "maxi",
-      "store": "Maxi",
-      "source_scope": "full",
-      "product_id": "pasulj",
-      "product": "Pasulj",
-      "category": "Osnovno",
-      "matched_product": "Pasulj Gradistanac",
-      "source_category": "Mahunarke",
-      "store_format": "Maxi",
-      "price": 199.99,
-      "regular_price": 229.99,
-      "sale_price": 199.99,
-      "is_sale": true,
-      "discount_pct": 13.0,
-      "target": 250,
-      "unit": "RSD/kg",
-      "status": "KUPI",
-      "package": {
-        "kg": null,
-        "l": null,
-        "count": null,
-        "variable_weight": false
-      },
-      "price_method": "sold_by_kg",
-      "warnings": [],
-      "barcode": "0000002807461",
-      "price_list_date": "01-11-2026",
-      "stale": false
-    },
-    {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -572,8 +537,41 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
+      "parser_version": "final-1.1",
+      "source_id": "maxi",
+      "store": "Maxi",
+      "source_scope": "full",
+      "product_id": "pasulj",
+      "product": "Pasulj",
+      "category": "Osnovno",
+      "matched_product": "Pasulj Gradistanac",
+      "source_category": "Mahunarke",
+      "store_format": "Maxi",
+      "price": 229.99,
+      "regular_price": 229.99,
+      "sale_price": null,
+      "is_sale": false,
+      "discount_pct": null,
+      "target": 250,
+      "unit": "RSD/kg",
+      "status": "KUPI",
+      "package": {
+        "kg": null,
+        "l": null,
+        "count": null,
+        "variable_weight": false
+      },
+      "price_method": "sold_by_kg",
+      "warnings": [],
+      "barcode": "0000002807461",
+      "price_list_date": "02-11-2026",
+      "stale": false
+    },
+    {
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -605,8 +603,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -634,12 +632,12 @@
       "price_method": "sold_by_kg",
       "warnings": [],
       "barcode": "0000002820621",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -671,8 +669,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -700,12 +698,12 @@
       "price_method": "fixed_pack_weight",
       "warnings": [],
       "barcode": "5949065041823",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -737,8 +735,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -770,8 +768,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -799,12 +797,12 @@
       "price_method": "sold_by_kg",
       "warnings": [],
       "barcode": "8606108096505",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -832,12 +830,12 @@
       "price_method": "sold_by_kg",
       "warnings": [],
       "barcode": "8606108096499",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -869,8 +867,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -900,12 +898,12 @@
         "official_unit_mismatch"
       ],
       "barcode": "8590421051894",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -937,8 +935,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -966,12 +964,45 @@
       "price_method": "per_piece",
       "warnings": [],
       "barcode": "8600197254808",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
+      "parser_version": "final-1.1",
+      "source_id": "maxi",
+      "store": "Maxi",
+      "source_scope": "full",
+      "product_id": "sargarepa",
+      "product": "Šargarepa",
+      "category": "Povrće",
+      "matched_product": "Sargarepa domaca",
+      "source_category": "Sveže voće i povrće",
+      "store_format": "Maxi",
+      "price": 59.99,
+      "regular_price": 89.99,
+      "sale_price": 59.99,
+      "is_sale": true,
+      "discount_pct": 33.3,
+      "target": 100,
+      "unit": "RSD/kg",
+      "status": "KUPI",
+      "package": {
+        "kg": null,
+        "l": null,
+        "count": null,
+        "variable_weight": false
+      },
+      "price_method": "sold_by_kg",
+      "warnings": [],
+      "barcode": "0000002820628",
+      "price_list_date": "02-11-2026",
+      "stale": false
+    },
+    {
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -1003,41 +1034,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
-      "parser_version": "final-1.1",
-      "source_id": "maxi",
-      "store": "Maxi",
-      "source_scope": "full",
-      "product_id": "sargarepa",
-      "product": "Šargarepa",
-      "category": "Povrće",
-      "matched_product": "Sargarepa domaca",
-      "source_category": "Sveže voće i povrće",
-      "store_format": "Maxi",
-      "price": 89.99,
-      "regular_price": 89.99,
-      "sale_price": null,
-      "is_sale": false,
-      "discount_pct": null,
-      "target": 100,
-      "unit": "RSD/kg",
-      "status": "KUPI",
-      "package": {
-        "kg": null,
-        "l": null,
-        "count": null,
-        "variable_weight": false
-      },
-      "price_method": "sold_by_kg",
-      "warnings": [],
-      "barcode": "0000002820628",
-      "price_list_date": "01-11-2026",
-      "stale": false
-    },
-    {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -1069,8 +1067,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -1098,12 +1096,12 @@
       "price_method": "fixed_pack_weight",
       "warnings": [],
       "barcode": "8600197349382",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -1131,12 +1129,12 @@
       "price_method": "fixed_pack_weight",
       "warnings": [],
       "barcode": "8606028000897",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -1164,12 +1162,12 @@
       "price_method": "per_piece",
       "warnings": [],
       "barcode": "8600197459425",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -1197,12 +1195,12 @@
       "price_method": "fixed_pack_volume",
       "warnings": [],
       "barcode": "8600197359480",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -1234,8 +1232,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -1267,8 +1265,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -1296,12 +1294,12 @@
       "price_method": "pack_count",
       "warnings": [],
       "barcode": "8600197486506",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -1333,8 +1331,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -1366,8 +1364,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -1395,12 +1393,12 @@
       "price_method": "sold_by_kg",
       "warnings": [],
       "barcode": "0000002820644",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -1432,8 +1430,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -1463,12 +1461,12 @@
         "official_unit_mismatch"
       ],
       "barcode": "8600197455526",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -1500,8 +1498,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -1533,8 +1531,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -1564,12 +1562,12 @@
         "official_unit_mismatch"
       ],
       "barcode": "8600197460810",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -1601,8 +1599,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "lidl",
       "store": "Lidl",
@@ -1634,8 +1632,8 @@
       "stale": false
     },
     {
-      "date": "2026-11-01",
-      "generated_at": "2026-11-01T12:51:34.858332+01:00",
+      "date": "2026-11-02",
+      "generated_at": "2026-11-02T14:31:20.875070+01:00",
       "parser_version": "final-1.1",
       "source_id": "maxi",
       "store": "Maxi",
@@ -1663,7 +1661,7 @@
       "price_method": "sold_by_kg",
       "warnings": [],
       "barcode": "8606112915793",
-      "price_list_date": "01-11-2026",
+      "price_list_date": "02-11-2026",
       "stale": false
     },
     {
@@ -2540,8 +2538,8 @@
       "enabled": true,
       "ok": true,
       "used_url": "https://tsmdelhaizeserbia.delhaize.rs/PublicDoc/cene_proizvoda_Delhaize.csv",
-      "downloaded_rows": 111611,
-      "usable_current_rows": 6694,
+      "downloaded_rows": 111608,
+      "usable_current_rows": 6693,
       "selected_results": 24,
       "scope": "full",
       "note": ""
